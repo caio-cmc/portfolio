@@ -1,0 +1,40 @@
+$blue: #0466C8;
+$gray: #979DAC;
+
+.header-component {
+  background-color: $blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-link {
+  text-decoration: none;
+  color: $gray;
+  padding-inline: 5px;
+}
+
+.home {
+  padding-left: 15px;
+}
+
+.header-togglers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-all-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about, .stacks {
+  font-size: xx-large;
+}
