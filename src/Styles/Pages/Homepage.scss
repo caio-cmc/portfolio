@@ -1,0 +1,19 @@
+.homepage-main {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+}
+
+.homepage-caio-profile {
+  border-radius: 500px;
+  width: 50vh;
+  padding: 15px;
+}
+
+.homepage-intro {
+  width: 50vh;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
