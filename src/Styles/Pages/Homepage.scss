@@ -1,13 +1,18 @@
+.homepage-view {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .homepage-main {
   display: flex;
-  // flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 87vh;
+  flex: 1 1 100%;
 }
 
 .homepage-caio-profile {
-  border-radius: 500px;
+  border-radius: 50%;
   width: 50vh;
   padding: 15px;
 }
