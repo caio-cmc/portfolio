@@ -18,6 +18,7 @@ function Header() {
       <div className="header-all-nav">
           <Link to="/about" className="header-link about">Sobre</Link>
           <Link to="/stacks" className="header-link stacks">Stacks</Link>
+          <Link to="/projects" className="header-link projects">Projetos</Link>
       </div>
     </header>
   );

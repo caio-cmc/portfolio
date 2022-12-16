@@ -1,0 +1,31 @@
+.about-cover {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.about-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-div {
+  flex: 1 1 100%;
+  background-color: aqua;
+}
+
+.hobbies-div, .interests-div {
+  height: 100vh;
+  background-color: red;
+} 
+
+.interests-div {
+  background-color: green;
+} 
+
+.about-picture {
+  border-radius: 50%;
+  width: 50vh;
+  padding: 15px;
+}

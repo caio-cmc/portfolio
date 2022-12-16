@@ -1,20 +1,55 @@
+import html from "../Images/html-logo.png"
+import css from "../Images/css-logo.png"
+import javascript from "../Images/javascript-logo.png"
+import react from "../Images/react-logo.png"
+import mysql from "../Images/mysql-logo.png"
+import nodejs from "../Images/nodejs-logo.png"
+import mongodb from "../Images/mongo-logo.png"
+import python from "../Images/python-logo.png"
+import typescript from "../Images/typescript-logo.png"
+import github from "../Images/github-logo.png"
+
 const StacksInfo = [
   {
+    name: 'HTML 5',
+    image: html
+  },
+  {
+    name: 'CSS 3',
+    image: css
+  },
+  {
     name: 'JavaScript',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png'
+    image: javascript
+  },
+  {
+    name: 'GitHub',
+    image: github
   },
   {
     name: 'React',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png'
-  },
-  {
-    name: 'Mysql',
-    image: 'https://marcas-logos.net/wp-content/uploads/2020/11/MySQL-logo.png'
+    image: react
   },
   {
     name: 'Node.js',
-    image: 'https://logospng.org/download/node-js/logo-node-js-512.png'
+    image: nodejs
   },
+  {
+    name: 'TypeScript',
+    image: typescript
+  },
+  {
+    name: 'Python',
+    image: python
+  },
+  {
+    name: 'Mysql',
+    image: mysql
+  },
+  {
+    name: 'MongoDB',
+    image: mongodb
+  }
 ];
 
 export default StacksInfo;
