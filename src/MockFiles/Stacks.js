@@ -11,11 +11,11 @@ import github from "../Images/github-logo.png"
 
 const StacksInfo = [
   {
-    name: 'HTML 5',
+    name: 'HTML',
     image: html
   },
   {
-    name: 'CSS 3',
+    name: 'CSS',
     image: css
   },
   {
@@ -43,7 +43,7 @@ const StacksInfo = [
     image: python
   },
   {
-    name: 'Mysql',
+    name: 'MySQL',
     image: mysql
   },
   {
