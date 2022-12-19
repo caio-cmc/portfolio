@@ -1,18 +1,21 @@
 import React from 'react';
 import Header from '../Components/Header';
+import StackCard from '../Components/StackCard';
 import StacksInfo from '../MockFiles/Stacks';
+import '../Styles/Pages/Stacks.scss'
 
 function Stacks() {
   return (
     <div>
       <Header />
-      <h1>Stacks</h1>
-      {StacksInfo.map((stack) => (
-        <div>
-          <h2>{ stack.name }</h2>
-          <img src={ stack.image } alt={ `${stack.name} logo` } />
+      <div className="stacks-main">
+        <h1>Stacks</h1>
+        <div className="stack-card-wrap">
+          {StacksInfo.map((stack) => (
+            <StackCard name={stack.name} image={stack.image} />
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 }
