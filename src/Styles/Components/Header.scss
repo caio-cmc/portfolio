@@ -1,11 +1,16 @@
 $blue: #0466C8;
 $gray: #979DAC;
 
-.header-component {
+.lgt-header-component {
   background-color: $blue;
   display: flex;
   flex-direction: column;
-  // height: 13vh;
+}
+
+.drk-header-component {
+  background-color: #545454;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-main {

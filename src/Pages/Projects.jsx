@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import PortContext from '../Context/PortfolioContext';
 import Header from '../Components/Header';
 
 function Projects() {
+  const { englishMode } = useContext(PortContext);
+
   return (
     <div>
       <Header />
-      <h1>Projetos</h1>
-      <p>Por aqui mostrarei alguns dos meus projetos já desenvolvidos na minha jornada como desenvolvedor</p>
+      <h1>{ englishMode ? 'Projects' : 'Projetos' }</h1>
+      <p>
+        { englishMode ? 'English text, the book is on the table, yadayadayada e essas coisas assim' : 'Por aqui mostrarei alguns dos meus projetos já desenvolvidos na minha jornada como desenvolvedor' }
+      </p>
     </div>
   );
 }
