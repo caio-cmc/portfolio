@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import PortContext from '../Context/PortfolioContext';
 import Header from '../Components/Header';
 import personExample from '../Images/personExample.png'
 import '../Styles/Pages/About.scss'
 
 function About() {
+  const { englishMode } = useContext(PortContext);
+
   return (
     <div>
       <div className="about-cover">
         <Header />
         <div className="about-view main-div">
           <img src={ personExample } alt="eu" className="about-picture main" />
-          <p>INTRODUÇÃO</p>
+          <p>{ englishMode ? 'INTRO' : 'INTRODUÇÃO' }</p>
         </div>
       </div>
       <div className="about-view hobbies-div">
@@ -19,7 +22,7 @@ function About() {
       </div>
       <div className="about-view interests-div">
         <img src={ personExample } alt="eu" className="about-picture interests" />
-        <p>INTERESSES</p>
+        <p>{ englishMode ? 'INTERESTS' : 'INTERESSES' }</p>
       </div>
     </div>
   );
