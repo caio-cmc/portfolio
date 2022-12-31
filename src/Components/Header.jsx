@@ -58,6 +58,9 @@ function Header() {
           <Link to="/projects" className="header-link projects">
             { englishMode ? 'Projects' : 'Projetos' }
           </Link>
+          <Link to="/contact" className="header-link contact">
+            { englishMode ? 'Contact me!' : 'Fale comigo!' }
+          </Link>
       </div>
     </header>
   );

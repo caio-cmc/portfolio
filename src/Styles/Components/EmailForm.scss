@@ -1,0 +1,14 @@
+.email-form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.form-input {
+  margin: 5px
+}
+
+.message { 
+  resize: none;
+  height: 100px;
+}
