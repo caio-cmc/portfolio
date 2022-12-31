@@ -1,0 +1,23 @@
+import React from 'react';
+import "../Styles/Components/SocialMedia.scss";
+
+function SocialMedia(props) {
+  const { name, image, url } = props;
+
+  return (
+    <a
+      href={ url }
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        className={`social-logo ${ name }`}
+        src={ image }
+        alt={ `${ name } logo` }
+      />
+      <p>{ `${ name }` }</p>
+    </a>
+  );
+}
+
+export default SocialMedia;

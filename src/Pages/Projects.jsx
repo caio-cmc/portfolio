@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import PortContext from '../Context/PortfolioContext';
 import Header from '../Components/Header';
+import "../Styles/Pages/Projects.scss"
 
 function Projects() {
   const { englishMode } = useContext(PortContext);
