@@ -5,8 +5,8 @@ function StackCard(props) {
   const { name, image } = props;
 
   return (
-    <div className="card-main">
-      <h2 className={`stack-name ${name}`}>{ name }</h2>
+    <div className="card-main card-bg">
+      <h2 className={`stack-name ${name} ttl`}>{ name }</h2>
       <img className={`stack-image ${name}`} src={ image } alt={ `${name} logo` } />
     </div>
   );

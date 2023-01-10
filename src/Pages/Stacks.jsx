@@ -6,16 +6,18 @@ import StackInfos from "../Infos/StackInfos";
 import "../Styles/Pages/Stacks.scss"
 
 function Stacks() {
-  const { englishMode } = useContext(PortContext);
+  const { englishMode, md } = useContext(PortContext);
 
   return (
-    <div>
+    <div className={`${md}-mode`}>
       <Header />
-      <div className="stacks-main">
-        <h1>{ englishMode ? "Skills" : "Habilidades" }</h1>
+      <div className="stacks-main bg">
+        <h1 className="ttl">
+          { englishMode ? "Skills" : "Habilidades" }
+        </h1>
         <div className="stack-card-wrap">
           {StackInfos.map((stack) => (
-            <StackCard name={ stack.name } image={ stack.image } />
+            <StackCard name={ stack.name } image={ stack.image } md={ md } />
           ))}
         </div>
       </div>

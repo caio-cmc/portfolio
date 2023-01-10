@@ -2,3 +2,33 @@
   margin: 0px;
   padding: 0px;
 }
+
+.dark-mode {
+  .bg {
+    background-color: rgb(0, 0, 0);
+  }
+  .card-bg {
+    background-color: darkgrey;
+  }
+  .ttl {
+    color: whitesmoke;
+  }
+  .txt {
+    color: antiquewhite;
+  }
+}
+
+.light-mode {
+  .bg {
+    background-color: antiquewhite;
+  }
+  .card-bg {
+    background-color: darkgrey;
+  }
+  .ttl {
+    color: rgb(26, 25, 25);
+  }
+  .txt {
+    color: black;
+  }
+}

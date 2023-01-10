@@ -6,15 +6,15 @@ import { homeEN, homePT } from '../Infos/LongTexts';
 import '../Styles/Pages/Homepage.scss'
 
 function Homepage() {
-  const { englishMode } = useContext(PortContext);
+  const { englishMode, md } = useContext(PortContext);
 
   return (
-    <div>
+    <div className={`${md}-mode`}>
       <div className="homepage-view">
         <Header />
-        <div className="homepage-main">
+        <div className="homepage-main bg">
           <img src={ eu } alt="Caio profile" className="homepage-caio-profile" />
-          <p className="homepage-intro">
+          <p className="homepage-intro txt">
             { englishMode ? homeEN : homePT }
           </p>
         </div>
