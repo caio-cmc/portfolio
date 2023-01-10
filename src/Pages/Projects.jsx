@@ -5,10 +5,10 @@ import { projEN, projPT } from '../Infos/LongTexts';
 import "../Styles/Pages/Projects.scss"
 
 function Projects() {
-  const { englishMode, md } = useContext(PortContext);
+  const { englishMode } = useContext(PortContext);
 
   return (
-    <div className={`${md}-mode`}>
+    <div>
       <Header />
       <div className="bg">
         <h1 className="ttl">{ englishMode ? 'Projects' : 'Projetos' }</h1>

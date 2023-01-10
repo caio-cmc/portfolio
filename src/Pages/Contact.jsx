@@ -7,10 +7,10 @@ import SocialMediaInfos from "../Infos/SocialMediaInfos";
 import "../Styles/Pages/Contact.scss";
 
 function Contact() {
-  const { englishMode, md } = useContext(PortContext);
+  const { englishMode } = useContext(PortContext);
 
   return (
-    <div className={`${md}-mode`}>
+    <div>
       <Header />
       <div className="bg">
         <h1 className="ttl">

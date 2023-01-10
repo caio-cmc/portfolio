@@ -6,10 +6,10 @@ import AboutCard from '../Components/AboutCard';
 import '../Styles/Pages/About.scss'
 
 function About() {
-  const { englishMode, darkMode, md } = useContext(PortContext);
+  const { englishMode, darkMode } = useContext(PortContext);
 
   return (
-    <div className={`${md}-mode`}>
+    <div>
         <Header />
         { AboutInfos.map((info) => (
           <AboutCard

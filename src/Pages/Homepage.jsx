@@ -6,10 +6,10 @@ import { homeEN, homePT } from '../Infos/LongTexts';
 import '../Styles/Pages/Homepage.scss'
 
 function Homepage() {
-  const { englishMode, md } = useContext(PortContext);
+  const { englishMode } = useContext(PortContext);
 
   return (
-    <div className={`${md}-mode`}>
+    <div>
       <div className="homepage-view">
         <Header />
         <div className="homepage-main bg">

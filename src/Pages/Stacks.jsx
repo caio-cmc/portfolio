@@ -6,10 +6,10 @@ import StackInfos from "../Infos/StackInfos";
 import "../Styles/Pages/Stacks.scss"
 
 function Stacks() {
-  const { englishMode, md } = useContext(PortContext);
+  const { englishMode } = useContext(PortContext);
 
   return (
-    <div className={`${md}-mode`}>
+    <div>
       <Header />
       <div className="stacks-main bg">
         <h1 className="ttl">
@@ -17,7 +17,7 @@ function Stacks() {
         </h1>
         <div className="stack-card-wrap">
           {StackInfos.map((stack) => (
-            <StackCard name={ stack.name } image={ stack.image } md={ md } />
+            <StackCard name={ stack.name } image={ stack.image } />
           ))}
         </div>
       </div>
