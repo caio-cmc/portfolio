@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import PortContext from '../Context/PortfolioContext';
 import Header from '../Components/Header';
+import { projEN, projPT } from '../Infos/LongTexts';
 import "../Styles/Pages/Projects.scss"
 
 function Projects() {
@@ -9,10 +10,12 @@ function Projects() {
   return (
     <div>
       <Header />
-      <h1>{ englishMode ? 'Projects' : 'Projetos' }</h1>
-      <p>
-        { englishMode ? 'English text, the book is on the table, yadayadayada e essas coisas assim' : 'Por aqui mostrarei alguns dos meus projetos já desenvolvidos na minha jornada como desenvolvedor' }
-      </p>
+      <div className="bg">
+        <h1 className="ttl">{ englishMode ? 'Projects' : 'Projetos' }</h1>
+        <p className="txt">
+          { englishMode ? projEN : projPT }
+        </p>
+      </div>
     </div>
   );
 }

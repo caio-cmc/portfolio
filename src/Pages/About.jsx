@@ -1,29 +1,31 @@
 import React, { useContext } from 'react';
 import PortContext from '../Context/PortfolioContext';
 import Header from '../Components/Header';
-import personExample from '../Images/personExample.png'
+import AboutInfos from '../Infos/AboutInfos';
+import AboutCard from '../Components/AboutCard';
 import '../Styles/Pages/About.scss'
 
 function About() {
-  const { englishMode } = useContext(PortContext);
+  const { englishMode, darkMode } = useContext(PortContext);
 
   return (
     <div>
-      <div className="about-cover">
         <Header />
-        <div className="about-view main-div">
-          <img src={ personExample } alt="eu" className="about-picture main" />
-          <p>{ englishMode ? 'INTRO' : 'INTRODUÇÃO' }</p>
-        </div>
-      </div>
-      <div className="about-view hobbies-div">
-        <p>HOBBIES</p>
-        <img src={ personExample } alt="eu" className="about-picture hobbies" />
-      </div>
-      <div className="about-view interests-div">
-        <img src={ personExample } alt="eu" className="about-picture interests" />
-        <p>{ englishMode ? 'INTERESTS' : 'INTERESSES' }</p>
-      </div>
+        { AboutInfos.map((info) => (
+          <AboutCard
+            id={ info.id }
+            topicPT={ info.topicPT }
+            topicEN={ info.topicEN }
+            imageDRK={ info.imageDRK }
+            imageLGT={ info.imageLGT }
+            paragraph1PT={ info.paragraph1PT }
+            paragraph2PT={ info.paragraph2PT }
+            paragraph1EN={ info.paragraph1EN }
+            paragraph2EN={ info.paragraph2EN }
+            darkMode={ darkMode }
+            englishMode={ englishMode }
+          />
+        )) }
     </div>
   );
 }

@@ -11,8 +11,10 @@ function Stacks() {
   return (
     <div>
       <Header />
-      <div className="stacks-main">
-        <h1>{ englishMode ? "Skills" : "Habilidades" }</h1>
+      <div className="stacks-main bg">
+        <h1 className="ttl">
+          { englishMode ? "Skills" : "Habilidades" }
+        </h1>
         <div className="stack-card-wrap">
           {StackInfos.map((stack) => (
             <StackCard name={ stack.name } image={ stack.image } />
