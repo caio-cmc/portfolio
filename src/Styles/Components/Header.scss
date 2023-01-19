@@ -1,46 +1,58 @@
-$blue: #0466C8;
-$gray: #979DAC;
-
-.light-header-component {
-  background-color: $blue;
+.header-component {
   display: flex;
-  flex-direction: column;
-}
-
-.dark-header-component {
-  background-color: #545454;
-  display: flex;
-  flex-direction: column;
-}
-
-.header-main {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 6em;
+  padding: 0vh 10vw ;
 }
 
-.header-link {
-  text-decoration: none;
-  color: $gray;
-  padding-inline: 5px;
-}
-
-.home {
-  padding-left: 15px;
-}
-
-.header-togglers {
+.header-nav-toggle {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
 
 .header-all-nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  gap: 2em;
 }
 
-.about, .stacks, .projects, .contact {
-  font-size: xx-large;
+.header-link {
+  text-decoration: none;
+  font-size: large;
+  font-weight: 700;
+}
+
+.selected {
+  text-decoration: underline;
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.5em;
+}
+
+.header-togglers {
+  display: flex;
+  // flex-direction: column;
+  gap: 0.5em;
+}
+
+.toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  width: 4em;
+  border-style: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mode-icon {
+  height: 2em;
+  width: 2em;
+}
+
+.lang-flag {
+  height: 1.5em;
+  width: 2em;
 }

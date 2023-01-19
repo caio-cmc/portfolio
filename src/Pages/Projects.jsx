@@ -9,7 +9,7 @@ function Projects() {
 
   return (
     <div>
-      <Header />
+      <Header page="projects" />
       <div className="bg">
         <h1 className="ttl">{ englishMode ? 'Projects' : 'Projetos' }</h1>
         <p className="txt">

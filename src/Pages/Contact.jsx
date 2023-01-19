@@ -10,21 +10,24 @@ function Contact() {
   const { englishMode } = useContext(PortContext);
 
   return (
-    <div>
-      <Header />
-      <div className="bg">
+    <div className="contact-page-main">
+      <Header page="contact" />
+      <div className="contact-bg">
         <h1 className="ttl">
           { englishMode ? "Contact me" : "Fale comigo" }
         </h1>
         <div className="components-wrap">
           <EmailForm />
-          { SocialMediaInfos.map((social) => (
-            <SocialMedia
-              name={ social.name }
-              image={ social.image }
-              url={ social.url }
-            />
-          )) }
+          <div className="contact-page-links">
+            { SocialMediaInfos.map((social) => (
+              <SocialMedia
+                key={ social.name }
+                name={ social.name }
+                image={ social.image }
+                url={ social.url }
+              />
+            )) }
+          </div>
         </div>
       </div>
     </div>

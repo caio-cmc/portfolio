@@ -11,7 +11,7 @@ function Homepage() {
   return (
     <div>
       <div className="homepage-view">
-        <Header />
+        <Header page="home" />
         <div className="homepage-main bg">
           <img src={ eu } alt="Caio profile" className="homepage-caio-profile" />
           <p className="homepage-intro txt">

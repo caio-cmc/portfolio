@@ -9,6 +9,7 @@ function SocialMedia(props) {
       href={ url }
       target="_blank"
       rel="noreferrer"
+      className="social-anchor"
     >
       <img
         className={`social-logo ${ name }`}

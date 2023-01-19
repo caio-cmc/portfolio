@@ -10,9 +10,12 @@ function About() {
 
   return (
     <div>
-        <Header />
+        <Header
+          page="about"
+        />
         { AboutInfos.map((info) => (
           <AboutCard
+            key={ info.id }
             id={ info.id }
             topicPT={ info.topicPT }
             topicEN={ info.topicEN }

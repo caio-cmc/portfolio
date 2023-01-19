@@ -9,15 +9,19 @@ function Stacks() {
   const { englishMode } = useContext(PortContext);
 
   return (
-    <div>
-      <Header />
-      <div className="stacks-main bg">
+    <div className="skills-view">
+      <Header page="skills" />
+      <div className="stacks-main skills-bg">
         <h1 className="ttl">
           { englishMode ? "Skills" : "Habilidades" }
         </h1>
         <div className="stack-card-wrap">
           {StackInfos.map((stack) => (
-            <StackCard name={ stack.name } image={ stack.image } />
+            <StackCard
+              key={ stack.name }
+              name={ stack.name }
+              image={ stack.image }
+            />
           ))}
         </div>
       </div>

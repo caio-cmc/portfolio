@@ -1,3 +1,17 @@
+.skills-view {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 100%;
+}
+
 .stack-card-wrap {
   display: flex;
   flex-wrap: wrap;
