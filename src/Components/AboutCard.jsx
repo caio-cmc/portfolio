@@ -17,22 +17,31 @@ function AboutCard(props) {
   } = props;
 
   const left = id % 2 ? true : false;
+  const evenOrOdd = id % 2 ? "odd" : "even";
 
   return (
     <div>
       { left ? (
-        <div className="bg">
-          <h2 className="ttl">{ englishMode ? topicEN : topicPT }</h2>
-          <img src={ darkMode ? imageDRK : imageLGT } alt="ex" style={{ "height" : "200px" }} />
-          <p className="txt">{ englishMode ? paragraph1EN : paragraph1PT }</p>
-          <p className="txt">{ englishMode ? paragraph2EN : paragraph2PT }</p>
+        <div className={`about-card ${evenOrOdd}`}>
+          <h2 className="about-card-ttl">{ englishMode ? topicEN : topicPT }</h2>
+          <div className="about-card-content">
+            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className="about-card-image" />
+            <div className="about-card-paragraphs">
+              <p className="txt">{ englishMode ? paragraph1EN : paragraph1PT }</p>
+              <p className="txt">{ englishMode ? paragraph2EN : paragraph2PT }</p>
+            </div>
+          </div>
         </div>
       ) : (
-        <div className="bg">
-          <h2 className="ttl">{ englishMode ? topicEN : topicPT }</h2>
-          <p className="txt">{ englishMode ? paragraph1EN : paragraph1PT }</p>
-          <p className="txt">{ englishMode ? paragraph2EN : paragraph2PT }</p>
-          <img src={ darkMode ? imageDRK : imageLGT } alt="ex" style={{ "height" : "200px" }} />
+        <div className={`about-card ${evenOrOdd}`}>
+          <h2 className="about-card-ttl">{ englishMode ? topicEN : topicPT }</h2>
+          <div className="about-card-content">
+            <div className="about-card-paragraphs">
+              <p className="txt">{ englishMode ? paragraph1EN : paragraph1PT }</p>
+              <p className="txt">{ englishMode ? paragraph2EN : paragraph2PT }</p>
+            </div>
+            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className="about-card-image" />
+          </div>
         </div>
       ) }
     </div>

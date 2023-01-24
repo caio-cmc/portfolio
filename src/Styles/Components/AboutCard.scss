@@ -1,0 +1,29 @@
+.about-card {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10em;
+}
+
+.about-card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5em;
+}
+
+.about-card-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.about-card-ttl {
+  padding-top: 2em;
+}
+
+.about-card-image {
+  height: 20em;
+}

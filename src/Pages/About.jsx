@@ -1,18 +1,29 @@
 import React, { useContext } from 'react';
 import PortContext from '../Context/PortfolioContext';
 import Header from '../Components/Header';
+import eu from '../Images/eu.jpeg';
 import AboutInfos from '../Infos/AboutInfos';
 import AboutCard from '../Components/AboutCard';
-import '../Styles/Pages/About.scss'
+import '../Styles/Pages/About.scss';
 
 function About() {
   const { englishMode, darkMode } = useContext(PortContext);
 
   return (
     <div>
+      <div className="about-view about-bg">
         <Header
           page="about"
         />
+        <div className="about-main even">
+          <h1 className="about-ttl">{ englishMode ? "About me" : "Sobre mim" }</h1>
+          <div className="about-main-info">
+            {/*REMOVER CLASSE MODE-ICON NA IMAGEM FINAL*/}
+            <img src={ eu } alt="ex" className="about-front-image mode-icon"/>
+            <p className="txt">{ englishMode ? "Here yall will know a little bit more about me :)" : "Por aqui vocês vão saber um pouco mais sobre mim :)" }</p>
+          </div>
+        </div>
+      </div>
         { AboutInfos.map((info) => (
           <AboutCard
             key={ info.id }

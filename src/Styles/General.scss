@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 $russian-violet: #10002bff;
 $russian-violet-2: #240046ff;
 $persian-indigo: #3c096cff;
@@ -12,6 +13,10 @@ $mauve: #e0aaffff;
   padding: 0px;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 //changed the svg colors using this website: https://codepen.io/sosuke/pen/Pjoqqp
 
 .dark-mode {
@@ -21,16 +26,16 @@ $mauve: #e0aaffff;
   .toggler {
     background-color: #303030;
   }
-  .header-bg {
+  .header-bg, .odd {
     background-color: #545454;
   }
-  .bg, .contact-bg, .skills-bg {
+  .bg, .contact-bg, .skills-bg, .even {
     background-color: rgb(0, 0, 0);
   }
   .card-bg {
     background-color: darkgrey;
   }
-  .ttl {
+  .ttl, .about-ttl, .about-card-ttl {
     color: whitesmoke;
   }
   .header-link {
@@ -55,16 +60,16 @@ $mauve: #e0aaffff;
   .toggler {
     background-color: antiquewhite;
   }
-  .header-bg {
+  .header-bg, .odd {
     background-color: #0466C8;
   }
-  .bg, .contact-bg, .skills-bg {
+  .bg, .contact-bg, .skills-bg, .even {
     background-color: antiquewhite;
   }
   .card-bg {
     background-color: darkgrey;
   }
-  .ttl {
+  .ttl, .about-ttl, .about-card-ttl {
     color: rgb(26, 25, 25);
   }
   .header-link {
@@ -78,6 +83,6 @@ $mauve: #e0aaffff;
     color: black;
   }
   .selected {
-    color: darkgreen;
+    color: rgb(6, 255, 6);
   }
 }
