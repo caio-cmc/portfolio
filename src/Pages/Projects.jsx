@@ -8,10 +8,10 @@ function Projects() {
   const { englishMode } = useContext(PortContext);
 
   return (
-    <div>
+    <div className="projects-view">
       <Header page="projects" />
-      <div className="bg">
-        <h1 className="ttl">{ englishMode ? 'Projects' : 'Projetos' }</h1>
+      <div className="projects-main projects-bg">
+        <h1 className="projects-ttl">{ englishMode ? 'Projects' : 'Projetos' }</h1>
         <p className="txt">
           { englishMode ? projEN : projPT }
         </p>
