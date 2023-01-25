@@ -1,16 +1,20 @@
 .card-main {
+  position: static;
   display: flex;
   flex-direction: column;
-  margin: 15px;
-  border-radius: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 10%;
+  height: 11rem;
+  width: 10rem;
+  gap: 1rem;
 }
 
 .stack-name {
-  padding: 10px 0px 10px 0px;
+  padding-top: 1rem;
 }
 
 .stack-image {
-  height: 80px;
-  width: 80px;
-  margin: 0px 10px 10px 10px;
+  height: 5rem;
 }

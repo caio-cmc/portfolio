@@ -11,9 +11,6 @@ $mauve: #e0aaffff;
 * {
   margin: 0px;
   padding: 0px;
-}
-
-body {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -35,7 +32,7 @@ body {
   .card-bg {
     background-color: darkgrey;
   }
-  .ttl, .about-ttl, .about-card-ttl, .projects-ttl {
+  .ttl, .about-ttl, .about-card-ttl, .projects-ttl, .skills-ttl {
     color: whitesmoke;
   }
   .header-link {
@@ -69,7 +66,7 @@ body {
   .card-bg {
     background-color: darkgrey;
   }
-  .ttl, .about-ttl, .about-card-ttl, .projects-ttl {
+  .ttl, .about-ttl, .about-card-ttl, .projects-ttl, .skills-ttl {
     color: rgb(26, 25, 25);
   }
   .header-link {
