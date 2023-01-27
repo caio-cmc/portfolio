@@ -4,26 +4,26 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 10em;
+  gap: 10rem;
 }
 
 .about-card-content {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5em;
+  gap: 5rem;
 }
 
 .about-card-paragraphs {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2rem;
 }
 
 .about-card-ttl {
-  padding-top: 2em;
+  padding-top: 2rem;
 }
 
 .about-card-image {
-  height: 20em;
+  height: 20rem;
 }

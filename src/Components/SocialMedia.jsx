@@ -2,7 +2,7 @@ import React from 'react';
 import "../Styles/Components/SocialMedia.scss";
 
 function SocialMedia(props) {
-  const { name, image, url } = props;
+  const { name, userLink, image, url } = props;
 
   return (
     <a
@@ -16,7 +16,7 @@ function SocialMedia(props) {
         src={ image }
         alt={ `${ name } logo` }
       />
-      <p className="txt">{ `${ name }` }</p>
+      <p className="txt">{ `${ userLink }` }</p>
     </a>
   );
 }

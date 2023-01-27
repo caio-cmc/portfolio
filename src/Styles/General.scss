@@ -26,13 +26,22 @@ $mauve: #e0aaffff;
   .header-bg, .odd {
     background-color: #545454;
   }
-  .bg, .contact-bg, .skills-bg, .even, .projects-bg {
+  .bg,
+  .contact-bg,
+  .skills-bg,
+  .even,
+  .projects-bg {
     background-color: rgb(0, 0, 0);
   }
   .card-bg {
     background-color: darkgrey;
   }
-  .ttl, .about-ttl, .about-card-ttl, .projects-ttl, .skills-ttl {
+  .ttl,
+  .about-ttl,
+  .about-card-ttl,
+  .projects-ttl,
+  .skills-ttl,
+  .contact-ttl {
     color: whitesmoke;
   }
   .header-link {
@@ -48,6 +57,11 @@ $mauve: #e0aaffff;
   .selected {
     color: black;
   }
+  .social-anchor {
+    &:hover {
+      background-color: red;
+    }
+  }
 }
 
 .light-mode {
@@ -60,13 +74,22 @@ $mauve: #e0aaffff;
   .header-bg, .odd {
     background-color: #0466C8;
   }
-  .bg, .contact-bg, .skills-bg, .even, .projects-bg {
+  .bg,
+  .contact-bg,
+  .skills-bg,
+  .even,
+  .projects-bg {
     background-color: antiquewhite;
   }
   .card-bg {
     background-color: darkgrey;
   }
-  .ttl, .about-ttl, .about-card-ttl, .projects-ttl, .skills-ttl {
+  .ttl,
+  .about-ttl,
+  .about-card-ttl,
+  .projects-ttl,
+  .skills-ttl,
+  .contact-ttl {
     color: rgb(26, 25, 25);
   }
   .header-link {
@@ -81,5 +104,10 @@ $mauve: #e0aaffff;
   }
   .selected {
     color: rgb(6, 255, 6);
+  }
+  .social-anchor {
+    &:hover {
+      background-color: red;
+    }
   }
 }

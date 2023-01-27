@@ -13,21 +13,29 @@ function Contact() {
     <div className="contact-page-main">
       <Header page="contact" />
       <div className="contact-bg">
-        <h1 className="ttl">
-          { englishMode ? "Contact me" : "Fale comigo" }
-        </h1>
-        <div className="components-wrap">
-          <EmailForm />
-          <div className="contact-page-links">
-            { SocialMediaInfos.map((social) => (
-              <SocialMedia
-                key={ social.name }
-                name={ social.name }
-                image={ social.image }
-                url={ social.url }
-              />
-            )) }
-          </div>
+        <div className="contact-text-container">
+          <h1 className="contact-ttl">
+            { englishMode ? "Contact me" : "Fale comigo" }
+          </h1>
+          <p className="contact-txt">
+            Gostou do que viu aqui? Entra em contato comigo!
+            <br />
+            Preenchendo esse formulário aqui embaixo, você vai estar me mandando um e-mail, vou responder o mais rápido o possível, eu prometo.
+            <br />
+            Lá no final, tem os links pras minhas redes sociais, sinta-se livre pra me dar uma stalkeada kkkkkkkk
+          </p>
+        </div>
+        <EmailForm />
+        <div className="contact-page-links">
+          { SocialMediaInfos.map((social) => (
+            <SocialMedia
+              key={ social.name }
+              userLink={ social.userLink }
+              name={ social.name }
+              image={ social.image }
+              url={ social.url }
+            />
+          )) }
         </div>
       </div>
     </div>

@@ -2,19 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 7em;
+  height: 7rem;
   padding: 0vh 10vw ;
 }
 
 .header-nav-toggle {
   display: flex;
   align-items: center;
-  gap: 2em;
+  gap: 2rem;
 }
 
 .header-all-nav {
   display: flex;
-  gap: 2em;
+  gap: 2rem;
 }
 
 .header-link {
@@ -25,21 +25,21 @@
 
 .selected {
   text-decoration: underline;
-  text-decoration-thickness: 0.15em;
-  text-underline-offset: 0.5em;
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.5rem;
 }
 
 .header-togglers {
   display: flex;
-  gap: 0.5em;
+  gap: 0.5rem;
 }
 
 .toggler {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4em;
-  width: 4em;
+  height: 4rem;
+  width: 4rem;
   border-style: none;
   outline: none;
   border-radius: 50%;
@@ -47,11 +47,11 @@
 }
 
 .mode-icon {
-  height: 2em;
-  width: 2em;
+  height: 2rem;
+  width: 2rem;
 }
 
 .lang-flag {
-  height: 1.5em;
-  width: 2em;
+  height: 1.5rem;
+  width: 2rem;
 }
