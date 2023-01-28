@@ -23,6 +23,18 @@ $mauve: #e0aaffff;
   .toggler {
     background-color: #303030;
   }
+  .form-sub-button {
+    background-color: #545454;
+    color: #fff;
+
+    &:hover {
+      background-color: #2e2e2e;
+    }
+    
+    &:disabled {
+      background-color: grey;
+    }
+  }
   .header-bg, .odd {
     background-color: #545454;
   }
@@ -51,7 +63,7 @@ $mauve: #e0aaffff;
       color: red;
     }
   }
-  .txt {
+  .txt, .contact-txt {
     color: antiquewhite;
   }
   .selected {
@@ -70,6 +82,18 @@ $mauve: #e0aaffff;
   }
   .toggler {
     background-color: antiquewhite;
+  }
+  .form-sub-button {
+    background-color: #0466C8;
+    color: #fff;
+
+    &:hover {
+      background-color: #02376d;
+    }
+    
+    &:disabled {
+      background-color: grey;
+    }
   }
   .header-bg, .odd {
     background-color: #0466C8;
@@ -99,7 +123,7 @@ $mauve: #e0aaffff;
       color: red;
     }
   }
-  .txt {
+  .txt, .contact-txt {
     color: black;
   }
   .selected {
