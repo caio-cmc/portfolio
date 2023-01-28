@@ -80,7 +80,7 @@ function EmailForm() {
           }
         />
         <button
-          className="form-input button"
+          className="form-input form-sub-button"
           type="submit"
           disabled={ !buttonSwitch }
         >

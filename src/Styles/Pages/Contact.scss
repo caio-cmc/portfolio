@@ -1,3 +1,36 @@
-.components-wrap {
+.contact-page-main {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+.contact-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 100%;
+  gap: 5rem;
+}
+
+.contact-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 40vw;
+  text-align: center;
+}
+
+.contact-ttl {
+  padding-top: 2rem;
+}
+
+.contact-txt {
+  font-size: 1.15rem;
+}
+
+.contact-page-links {
+  display: flex;
+  gap: 2rem;
 }

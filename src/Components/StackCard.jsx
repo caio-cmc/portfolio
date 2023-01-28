@@ -6,7 +6,7 @@ function StackCard(props) {
 
   return (
     <div className="card-main card-bg">
-      <h2 className={`stack-name ${name} ttl`}>{ name }</h2>
+      <h3 className={`stack-name ttl`}>{ name }</h3>
       <img className={`stack-image ${name}`} src={ image } alt={ `${name} logo` } />
     </div>
   );

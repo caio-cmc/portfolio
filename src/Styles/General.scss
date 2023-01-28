@@ -1,34 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$russian-violet: #10002bff;
+$russian-violet-2: #240046ff;
+$persian-indigo: #3c096cff;
+$purple: #5a189aff;
+$french-violet: #7b2cbfff;
+$amethyst: #9d4eddff;
+$heliotrope: #c77dffff;
+$mauve: #e0aaffff;
+
 * {
   margin: 0px;
   padding: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 
+//changed the svg colors using this website: https://codepen.io/sosuke/pen/Pjoqqp
+
 .dark-mode {
-  .bg {
+  .mode-icon {
+    filter: invert(100%) sepia(50%) saturate(0%) hue-rotate(251deg) brightness(108%) contrast(101%);
+  }
+  .toggler {
+    background-color: #303030;
+  }
+  .form-sub-button {
+    background-color: #545454;
+    color: #fff;
+
+    &:hover {
+      background-color: #2e2e2e;
+    }
+    
+    &:disabled {
+      background-color: grey;
+    }
+  }
+  .header-bg, .odd {
+    background-color: #545454;
+  }
+  .bg,
+  .contact-bg,
+  .skills-bg,
+  .even,
+  .projects-bg {
     background-color: rgb(0, 0, 0);
   }
   .card-bg {
     background-color: darkgrey;
   }
-  .ttl {
+  .ttl,
+  .about-ttl,
+  .about-card-ttl,
+  .projects-ttl,
+  .skills-ttl,
+  .contact-ttl {
     color: whitesmoke;
   }
-  .txt {
+  .header-link {
+    color: #fff;
+
+    &:hover {
+      color: red;
+    }
+  }
+  .txt, .contact-txt {
     color: antiquewhite;
+  }
+  .selected {
+    color: black;
+  }
+  .social-anchor {
+    &:hover {
+      background-color: red;
+    }
   }
 }
 
 .light-mode {
-  .bg {
+  .mode-icon {
+    filter: invert(0%) sepia(0%) saturate(7%) hue-rotate(149deg) brightness(101%) contrast(100%);
+  }
+  .toggler {
+    background-color: antiquewhite;
+  }
+  .form-sub-button {
+    background-color: #0466C8;
+    color: #fff;
+
+    &:hover {
+      background-color: #02376d;
+    }
+    
+    &:disabled {
+      background-color: grey;
+    }
+  }
+  .header-bg, .odd {
+    background-color: #0466C8;
+  }
+  .bg,
+  .contact-bg,
+  .skills-bg,
+  .even,
+  .projects-bg {
     background-color: antiquewhite;
   }
   .card-bg {
     background-color: darkgrey;
   }
-  .ttl {
+  .ttl,
+  .about-ttl,
+  .about-card-ttl,
+  .projects-ttl,
+  .skills-ttl,
+  .contact-ttl {
     color: rgb(26, 25, 25);
   }
-  .txt {
+  .header-link {
+    color: #fff;
+
+    &:hover {
+      color: red;
+    }
+  }
+  .txt, .contact-txt {
     color: black;
+  }
+  .selected {
+    color: rgb(6, 255, 6);
+  }
+  .social-anchor {
+    &:hover {
+      background-color: red;
+    }
   }
 }

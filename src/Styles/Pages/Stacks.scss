@@ -1,4 +1,36 @@
+.skills-view {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 100%;
+  padding: 0vh 10vw;
+}
+
+.skills-ttl {
+  padding-top: 2rem;
+}
+
 .stack-card-wrap {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+}
+
+.skill-type-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-list {
+  display: flex;
 }

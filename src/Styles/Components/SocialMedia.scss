@@ -1,5 +1,19 @@
+.social-anchor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
 .social-logo {
-  height: 200px;
-  width: 200px;
-  margin: 5px;
+  height: 5rem;
+}
+
+.GitHub {
+  background-color: white;
+  border-radius: 50%;
 }

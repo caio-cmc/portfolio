@@ -1,31 +1,31 @@
-.about-cover {
+.about-view {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
-.about-view {
+.about-main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-}
-
-.main-div {
   flex: 1 1 100%;
-  background-color: aqua;
+  gap: 5rem;
 }
 
-.hobbies-div, .interests-div {
-  height: 100vh;
-  background-color: red;
-} 
+.about-ttl {
+  padding-top: 2rem;
+}
 
-.interests-div {
-  background-color: green;
-} 
+.about-main-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
 
-.about-picture {
-  border-radius: 50%;
-  width: 50vh;
-  padding: 15px;
+.about-front-image {
+  height: 50vh;
+  width: 30vw;
+  border-radius: 30%;
 }
