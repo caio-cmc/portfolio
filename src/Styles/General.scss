@@ -35,8 +35,16 @@ $mauve: #e0aaffff;
       background-color: grey;
     }
   }
-  .header-bg, .odd {
+  .header-bg, .odd, .project-card-main {
     background-color: #545454;
+  }
+  .project-card-main {
+    border: solid white 1px;
+
+    &:hover {
+      box-shadow: 10px 5px 5px black;
+
+    }
   }
   .bg,
   .contact-bg,
@@ -95,8 +103,16 @@ $mauve: #e0aaffff;
       background-color: grey;
     }
   }
-  .header-bg, .odd {
+  .header-bg, .odd, .project-card-main {
     background-color: #0466C8;
+  }
+  .project-card-main {
+    border: solid black 1px;
+
+    &:hover {
+      box-shadow: 5px 5px 5px grey;
+
+    }
   }
   .bg,
   .contact-bg,
