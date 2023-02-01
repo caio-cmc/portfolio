@@ -1,5 +1,5 @@
 import html from "../Images/Stacks/html-logo.png";
-import oldFolio from "../Images/old-portfolio.png"
+import oldFolio from "../Images/Projects/old-portfolio.png"
 
 const ProjectsInfo = [
   {
@@ -35,6 +35,16 @@ const ProjectsInfo = [
   {
     namePT: "TESTE 2",
     nameEN: "test 2",
+    type: ["Front-end", "Back-end"],
+    image: html,
+    descriptionPT: "teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste",
+    descriptionEN: "TEXT IN ENGLISH SDNGKJNSDFKJGN JKASDNFKJANSDKFJ JNFJKASDNF KJANOIRNA NOAJSNDFJKL ASLKDFNASDNFLKANWEFIOANWEFN NA LL NALFKNLAKN LKAN LKAF  KAEFK",
+    link: "https://www.google.com.br/",
+    gitRepository: "https://github.com/caio-cmc/react-portfolio"
+  },
+  {
+    namePT: "TESTE 3",
+    nameEN: "test 3",
     type: ["Front-end", "Back-end"],
     image: html,
     descriptionPT: "teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste",

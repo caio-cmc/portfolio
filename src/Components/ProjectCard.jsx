@@ -8,7 +8,7 @@ function ProjectCard(props) {
     descriptionPT, descriptionEN, link, gitRepository } = props;
   
   const { englishMode } = useContext(PortContext);
-
+  
   return (
     <div className="project-card-main">
       <h2 className="project-card-ttl">
