@@ -1,6 +1,6 @@
 import insta from "../Images/insta-logo.png";
 import face from "../Images/face-logo.png";
-import gh from "../Images/github-logo.png";
+import gh from "../Images/Stacks/github-logo.png";
 import linked from "../Images/linkedin-logo.png";
 
 const SocialMediaInfos = [

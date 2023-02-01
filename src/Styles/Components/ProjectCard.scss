@@ -4,17 +4,13 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  width: 30rem;
+  width: 25rem;
   border-radius: 25px;
+  padding: 1rem;
 
   &:hover {
     transition: 500ms;
   }
-}
-
-.project-card-ttl {
-  padding-top: 1rem;
-  color: aliceblue;
 }
 
 .project-card-type {
@@ -25,8 +21,6 @@
 }
 
 .type {
-  background-color: antiquewhite;
-  color: black;
   border-radius: 15px;
   padding: 0.5rem 1rem;
 }
@@ -36,7 +30,6 @@
   max-width: 90%;
   object-fit: cover;
   border-radius: 20px;
-  border: solid black 1px;
 }
 
 .project-card-description {
@@ -46,14 +39,12 @@
   height: 6rem;
   text-align: center;
   font-weight: 500;
-  color: aliceblue;
 }
 
 .project-card-links {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
-  padding-bottom: 1rem;
+  gap: 2rem;
   font-weight: 700;
 }
 
@@ -62,13 +53,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background-color: antiquewhite;
-  color: black;
   border-radius: 50px;
   padding: 1rem;
   width: 10rem;
-
-  &:hover {
-    background-color: rgb(253, 219, 174);
-  }
 }

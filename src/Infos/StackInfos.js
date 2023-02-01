@@ -1,15 +1,15 @@
-import html from "../Images/html-logo.png";
-import css from "../Images/css-logo.png";
-import sass from "../Images/sass-logo.png";
-import javascript from "../Images/javascript-logo.png";
-import react from "../Images/react-logo.png";
-import typescript from "../Images/typescript-logo.png";
-import nodejs from "../Images/nodejs-logo.png";
-import python from "../Images/python-logo.png";
-import mysql from "../Images/mysql-logo.png";
-import mongodb from "../Images/mongo-logo.png";
-import git from "../Images/git-logo.png";
-import github from "../Images/github-logo.png";
+import html from "../Images/Stacks/html-logo.png";
+import css from "../Images/Stacks/css-logo.png";
+import sass from "../Images/Stacks/sass-logo.png";
+import javascript from "../Images/Stacks/javascript-logo.png";
+import react from "../Images/Stacks/react-logo.png";
+import typescript from "../Images/Stacks/typescript-logo.png";
+import nodejs from "../Images/Stacks/nodejs-logo.png";
+import python from "../Images/Stacks/python-logo.png";
+import mysql from "../Images/Stacks/mysql-logo.png";
+import mongodb from "../Images/Stacks/mongo-logo.png";
+import git from "../Images/Stacks/git-logo.png";
+import github from "../Images/Stacks/github-logo.png";
 
 const StackInfos = [
   {

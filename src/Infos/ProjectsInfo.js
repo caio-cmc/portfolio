@@ -1,4 +1,4 @@
-import html from "../Images/html-logo.png";
+import html from "../Images/Stacks/html-logo.png";
 import oldFolio from "../Images/old-portfolio.png"
 
 const ProjectsInfo = [

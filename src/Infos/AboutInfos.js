@@ -1,6 +1,6 @@
 import ex1 from "../Images/insta-logo.png";
 import ex2 from "../Images/face-logo.png";
-import ex3 from "../Images/github-logo.png";
+import ex3 from "../Images/Stacks/github-logo.png";
 import ex4 from "../Images/linkedin-logo.png";
 
 const AboutInfos = [

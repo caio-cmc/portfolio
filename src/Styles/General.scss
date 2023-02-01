@@ -46,6 +46,9 @@ $mauve: #e0aaffff;
 
     }
   }
+  .project-card-image {
+    border: solid black 1px;
+  }
   .bg,
   .contact-bg,
   .skills-bg,
@@ -64,6 +67,9 @@ $mauve: #e0aaffff;
   .contact-ttl {
     color: whitesmoke;
   }
+  .project-card-ttl {
+    color: whitesmoke;
+  }
   .header-link {
     color: #fff;
 
@@ -80,6 +86,21 @@ $mauve: #e0aaffff;
   .social-anchor {
     &:hover {
       background-color: red;
+    }
+  }
+  .type {
+    background-color: antiquewhite;
+    color: black;
+  }
+  .project-card-description {
+    color: aliceblue;
+  }
+  .link {
+    background-color: antiquewhite;
+    color: black;
+
+    &:hover {
+      background-color: rgb(253, 219, 174);
     }
   }
 }
@@ -114,6 +135,9 @@ $mauve: #e0aaffff;
 
     }
   }
+  .project-card-image {
+    border: solid black 1px;
+  }
   .bg,
   .contact-bg,
   .skills-bg,
@@ -132,6 +156,9 @@ $mauve: #e0aaffff;
   .contact-ttl {
     color: rgb(26, 25, 25);
   }
+  .project-card-ttl {
+    color: whitesmoke;
+  }
   .header-link {
     color: #fff;
 
@@ -148,6 +175,21 @@ $mauve: #e0aaffff;
   .social-anchor {
     &:hover {
       background-color: red;
+    }
+  }
+  .type {
+    background-color: antiquewhite;
+    color: black;
+  }
+  .project-card-description {
+    color: aliceblue;
+  }
+  .link {
+    background-color: antiquewhite;
+    color: black;
+
+    &:hover {
+      background-color: rgb(253, 219, 174);
     }
   }
 }
