@@ -1,0 +1,59 @@
+.project-card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 25rem;
+  border-radius: 25px;
+  padding: 1rem;
+
+  &:hover {
+    transition: 500ms;
+  }
+}
+
+.project-card-type {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-weight: 700;
+}
+
+.type {
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+
+.project-card-image {
+  height: 20rem;
+  max-width: 90%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.project-card-description {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.project-card-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-weight: 700;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 1rem;
+  width: 10rem;
+}

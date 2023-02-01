@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from 'react';
 import PortContext from '../Context/PortfolioContext';
 import { Link } from 'react-router-dom';
-import name from '../Images/name.png';
-import sun from "../Images/sun.svg";
-import moon from "../Images/moon.svg";
-import bra from "../Images/brazil-flag.png";
-import uk from "../Images/uk-flag.png";
+import name from '../Images/Header/name.png';
+import sun from "../Images/Header/sun.svg";
+import moon from "../Images/Header/moon.svg";
+import bra from "../Images/Header/brazil-flag.png";
+import uk from "../Images/Header/uk-flag.png";
 import '../Styles/Components/Header.scss';
 
 function Header(props) {

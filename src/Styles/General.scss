@@ -17,7 +17,7 @@ $mauve: #e0aaffff;
 //changed the svg colors using this website: https://codepen.io/sosuke/pen/Pjoqqp
 
 .dark-mode {
-  .mode-icon {
+  .mode-icon, .chevron {
     filter: invert(100%) sepia(50%) saturate(0%) hue-rotate(251deg) brightness(108%) contrast(101%);
   }
   .toggler {
@@ -35,8 +35,19 @@ $mauve: #e0aaffff;
       background-color: grey;
     }
   }
-  .header-bg, .odd {
+  .header-bg, .odd, .project-card-main {
     background-color: #545454;
+  }
+  .project-card-main {
+    border: solid white 1px;
+
+    &:hover {
+      box-shadow: 10px 5px 5px black;
+
+    }
+  }
+  .project-card-image {
+    border: solid black 1px;
   }
   .bg,
   .contact-bg,
@@ -56,6 +67,9 @@ $mauve: #e0aaffff;
   .contact-ttl {
     color: whitesmoke;
   }
+  .project-card-ttl {
+    color: whitesmoke;
+  }
   .header-link {
     color: #fff;
 
@@ -63,7 +77,7 @@ $mauve: #e0aaffff;
       color: red;
     }
   }
-  .txt, .contact-txt {
+  .txt, .contact-txt, .projects-txt {
     color: antiquewhite;
   }
   .selected {
@@ -74,10 +88,25 @@ $mauve: #e0aaffff;
       background-color: red;
     }
   }
+  .type {
+    background-color: antiquewhite;
+    color: black;
+  }
+  .project-card-description {
+    color: aliceblue;
+  }
+  .link {
+    background-color: antiquewhite;
+    color: black;
+
+    &:hover {
+      background-color: rgb(253, 219, 174);
+    }
+  }
 }
 
 .light-mode {
-  .mode-icon {
+  .mode-icon, .chevron {
     filter: invert(0%) sepia(0%) saturate(7%) hue-rotate(149deg) brightness(101%) contrast(100%);
   }
   .toggler {
@@ -95,8 +124,19 @@ $mauve: #e0aaffff;
       background-color: grey;
     }
   }
-  .header-bg, .odd {
+  .header-bg, .odd, .project-card-main {
     background-color: #0466C8;
+  }
+  .project-card-main {
+    border: solid black 1px;
+
+    &:hover {
+      box-shadow: 5px 5px 5px grey;
+
+    }
+  }
+  .project-card-image {
+    border: solid black 1px;
   }
   .bg,
   .contact-bg,
@@ -116,6 +156,9 @@ $mauve: #e0aaffff;
   .contact-ttl {
     color: rgb(26, 25, 25);
   }
+  .project-card-ttl {
+    color: whitesmoke;
+  }
   .header-link {
     color: #fff;
 
@@ -132,6 +175,21 @@ $mauve: #e0aaffff;
   .social-anchor {
     &:hover {
       background-color: red;
+    }
+  }
+  .type {
+    background-color: antiquewhite;
+    color: black;
+  }
+  .project-card-description {
+    color: aliceblue;
+  }
+  .link {
+    background-color: antiquewhite;
+    color: black;
+
+    &:hover {
+      background-color: rgb(253, 219, 174);
     }
   }
 }
