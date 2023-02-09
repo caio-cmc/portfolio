@@ -5,7 +5,7 @@ import "../Styles/Components/ProjectCard.scss";
 
 function ProjectCard(props) {
   const { namePT, nameEN, type, image,
-    descriptionPT, descriptionEN, link, gitRepository } = props;
+    descriptionPT, descriptionEN, stacks, link, gitRepository } = props;
   
   const { englishMode } = useContext(PortContext);
   
@@ -25,6 +25,11 @@ function ProjectCard(props) {
         <img className="project-card-image" src={ image } alt={ namePT } />
         <div className="test-div">
           <h2>Stacks:</h2>
+          <div className="project-card-icons">
+            { stacks.map((stack) => (
+              <img className={ `${stack} icon` } src={ stack } alt={ `${stack} icon` } />
+            )) }
+          </div>
         </div>
       </div>
       <p className="project-card-description">

@@ -10,19 +10,6 @@
 
   &:hover {
     transition: 500ms;
-
-    .project-card-image {
-      filter: blur(2px) brightness(30%);
-      transition: 500ms;
-    }
-
-    .test-div {
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 500ms;
-    }
   }
 }
 
@@ -46,6 +33,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &:hover {
+    .project-card-image {
+      filter: blur(2px) brightness(30%);
+      transition: 500ms;
+    }
+
+    .test-div {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      transition: 500ms;
+    }
+  }
 }
 
 .project-card-image {
@@ -62,6 +66,16 @@
   border-radius: 20px;
   position: absolute;
   display: none;
+}
+
+.project-card-icons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.icon {
+  height: 5rem;
 }
 
 .project-card-description {

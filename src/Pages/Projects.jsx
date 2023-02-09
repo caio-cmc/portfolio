@@ -65,6 +65,7 @@ function Projects() {
                   image={ project.image }
                   descriptionPT={ project.descriptionPT }
                   descriptionEN={ project.descriptionEN }
+                  stacks={ project.stacks }
                   link={ project.link }
                   gitRepository={ project.gitRepository }
                 />
