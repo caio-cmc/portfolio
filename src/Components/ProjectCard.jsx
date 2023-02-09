@@ -21,7 +21,12 @@ function ProjectCard(props) {
           </p>
         )) }
       </div>
-      <img className="project-card-image" src={ image } alt={ namePT } />
+      <div className="project-card-container-image">
+        <img className="project-card-image" src={ image } alt={ namePT } />
+        <div className="test-div">
+          <h2>Stacks:</h2>
+        </div>
+      </div>
       <p className="project-card-description">
         { englishMode ? descriptionEN : descriptionPT }
       </p>
