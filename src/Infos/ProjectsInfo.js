@@ -8,22 +8,22 @@ import react from "../Images/Stacks/react-logo.png";
 const ProjectsInfo = [
   {
     namePT: "Portfólio Antigo",
-    nameEN: "Old portfolio",
+    nameEN: "Old Portfolio",
     type: ["Front-End"],
     image: oldFolio,
-    descriptionPT: "Meu primeiro portfólio feito no primeiro mês de curso de programação da Trybe, está aqui para servir de comparativo com esse portfólio atual.",
-    descriptionEN: "TEXT IN ENGLISH SDNGKJNSDFKJGN JKASDNFKJANSDKFJ JNFJKASDNF KJANOIRNA NOAJSNDFJKL ASLKDFNASDNFLKANWEFIOANWEFN NA LL NALFKNLAKN LKAN LKAF  KAEFK",
+    descriptionPT: "Meu primeiro portfólio, feito no primeiro mês de curso de programação da Trybe, está aqui para servir de comparativo com esse portfólio atual.",
+    descriptionEN: "My very first portfolio, made in the first month of Trybe programming course, it is here to serve as a comparison with this current portfolio.",
     stacks: [html, css],
     link: "https://caio-cmc.github.io/",
     gitRepository: "https://github.com/caio-cmc/caio-cmc.github.io"
   },
   {
-    namePT: "Portfólio Atual",
-    nameEN: "Portfolio",
+    namePT: "Este Portfólio",
+    nameEN: "This Portfolio",
     type: ["Front-End"],
     image: html,
-    descriptionPT: "Meu portfólio atual que você já está vendo, feito após o final do curso de programação.",
-    descriptionEN: "TEXT IN ENGLISH SDNGKJNSDFKJGN JKASDNFKJANSDKFJ JNFJKASDNF KJANOIRNA NOAJSNDFJKL ASLKDFNASDNFLKANWEFIOANWEFN NA LL NALFKNLAKN LKAN LKAF  KAEFK",
+    descriptionPT: "Meu portfólio atual, feito após o final do curso de programação.",
+    descriptionEN: "My current portfolio, made after the end of the programming course. ",
     stacks: [react, sass, html],
     link: "atual",
     gitRepository: "https://github.com/caio-cmc/react-portfolio"
@@ -37,7 +37,7 @@ const ProjectsInfo = [
     descriptionEN: "TEXT IN ENGLISH SDNGKJNSDFKJGN JKASDNFKJANSDKFJ JNFJKASDNF KJANOIRNA NOAJSNDFJKL ASLKDFNASDNFLKANWEFIOANWEFN NA LL NALFKNLAKN LKAN LKAF  KAEFK",
     stacks: [html, css, javascript],
     link: "https://www.google.com.br/",
-    gitRepository: "https://github.com/caio-cmc/react-portfolio"
+    gitRepository: "https://github.com/caio-cmc/"
   },
   {
     namePT: "TESTE 2",
@@ -48,7 +48,7 @@ const ProjectsInfo = [
     descriptionEN: "TEXT IN ENGLISH SDNGKJNSDFKJGN JKASDNFKJANSDKFJ JNFJKASDNF KJANOIRNA NOAJSNDFJKL ASLKDFNASDNFLKANWEFIOANWEFN NA LL NALFKNLAKN LKAN LKAF  KAEFK",
     stacks: [html, css, javascript],
     link: "https://www.google.com.br/",
-    gitRepository: "https://github.com/caio-cmc/react-portfolio"
+    gitRepository: "https://github.com/caio-cmc/"
   },
   {
     namePT: "TESTE 3",
@@ -59,7 +59,7 @@ const ProjectsInfo = [
     descriptionEN: "TEXT IN ENGLISH SDNGKJNSDFKJGN JKASDNFKJANSDKFJ JNFJKASDNF KJANOIRNA NOAJSNDFJKL ASLKDFNASDNFLKANWEFIOANWEFN NA LL NALFKNLAKN LKAN LKAF  KAEFK",
     stacks: [html, css, javascript],
     link: "https://www.google.com.br/",
-    gitRepository: "https://github.com/caio-cmc/react-portfolio"
+    gitRepository: "https://github.com/caio-cmc/"
   },
 ];
 

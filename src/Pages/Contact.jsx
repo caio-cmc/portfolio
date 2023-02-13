@@ -4,6 +4,7 @@ import Header from "../Components/Header";
 import EmailForm from "../Components/EmailForm";
 import SocialMedia from "../Components/SocialMedia";
 import SocialMediaInfos from "../Infos/SocialMediaInfos";
+import { contPT1, contEN1, contPT2, contEN2, contPT3, contEN3 } from "../Infos/LongTexts";
 import "../Styles/Pages/Contact.scss";
 
 function Contact() {
@@ -18,11 +19,11 @@ function Contact() {
             { englishMode ? "Contact me" : "Fale comigo" }
           </h1>
           <p className="contact-txt">
-            Gostou do que viu aqui? Entra em contato comigo!
+            { englishMode ? contEN1 : contPT1 }
             <br />
-            Preenchendo esse formulário aqui embaixo, você vai estar me mandando um e-mail, vou responder o mais rápido o possível, eu prometo.
+            { englishMode ? contEN2 : contPT2 }
             <br />
-            Lá no final, tem os links pras minhas redes sociais, sinta-se livre pra me dar uma stalkeada kkkkkkkk
+            { englishMode ? contEN3 : contPT3 }
           </p>
         </div>
         <EmailForm />
