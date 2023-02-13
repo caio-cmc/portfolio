@@ -6,9 +6,9 @@ const homePT2 = "sejam bem-vindos ao meu portfólio, eu serei seu guia!";
 
 const homeEN2 = "welcome to my portfolio, I'll be your guide!";
 
-const projPT = "Por aqui mostrarei alguns dos meus projetos já desenvolvidos na minha jornada como desenvolvedor";
+const projPT = "Aqui estão alguns dos projetos já desenvolvidos durante a minha jornada como desenvolvedor.";
 
-const projEN = "English text, the book is on the table, yadayadayada e essas coisas assim";
+const projEN = "Here are some projects developed by me during my journey as a developer.";
 
 const contPT1 = "Gostaram do que viram? Entrem em contato comigo!";
 
