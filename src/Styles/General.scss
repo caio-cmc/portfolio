@@ -59,6 +59,7 @@ $mauve: #e0aaffff;
   .even,
   .projects-bg {
     background-color: rgb(0, 0, 0);
+    transition: 300ms;
   }
   .card-bg {
     background-color: darkgrey;
@@ -81,7 +82,7 @@ $mauve: #e0aaffff;
       color: red;
     }
   }
-  .txt, .contact-txt, .projects-txt {
+  .txt, .contact-txt, .projects-txt, .homepage-txt {
     color: antiquewhite;
   }
   .selected {
@@ -152,6 +153,7 @@ $mauve: #e0aaffff;
   .even,
   .projects-bg {
     background-color: antiquewhite;
+    transition: 300ms;
   }
   .card-bg {
     background-color: darkgrey;
@@ -174,7 +176,7 @@ $mauve: #e0aaffff;
       color: red;
     }
   }
-  .txt, .contact-txt {
+  .txt, .contact-txt, .projects-txt, .homepage-txt {
     color: black;
   }
   .selected {
