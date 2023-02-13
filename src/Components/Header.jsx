@@ -14,14 +14,8 @@ function Header(props) {
     setDarkMode,
     englishMode,
     setEnglishMode,
-    abt, 
-    setAbt,
-    skl,
-    setSkl,
-    proj,
-    setProj,
-    cont,
-    setCont
+    currPage,
+    setCurrPage,
   } = useContext(PortContext);
 
   const { page } = props;
@@ -44,31 +38,23 @@ function Header(props) {
 
   useEffect(() => {
     const returnToDefault = () => {
-      setAbt("");
-      setSkl("");
-      setProj("");
-      setCont("");
+      setCurrPage({
+        about: "", skills: "", projects: "", contact: ""
+      });
     }
 
     const currentPage = (page) => {
-      if (page === "about") {
+      if (page === "home") {
         returnToDefault();
-        setAbt("selected");
-      } else if (page === "skills") {
-        returnToDefault();
-        setSkl("selected");
-      } else if (page === "projects") {
-        returnToDefault();
-        setProj("selected");
-      } else if (page === "contact") {
-        returnToDefault();
-        setCont("selected");
       } else {
         returnToDefault();
+        setCurrPage((prevState) => {
+          return { ...prevState, [page]: "selected" }
+        });
       }
     }
     currentPage(page)
-  }, [page, setAbt, setCont, setProj, setSkl]);
+  }, [page, setCurrPage]);
 
   return (
     <header className="header-component header-bg">
@@ -77,16 +63,16 @@ function Header(props) {
       </Link>
       <div className="header-nav-toggle">
         <nav className="header-all-nav">
-          <Link to="/about" className={`header-link about ${abt}`}>
+          <Link to="/about" className={`header-link about ${currPage.about}`}>
             { englishMode ? 'About' : 'Sobre' }
           </Link>
-          <Link to="/stacks" className={`header-link stacks ${skl}`}>
+          <Link to="/stacks" className={`header-link stacks ${currPage.skills}`}>
             { englishMode ?  'Skills' : 'Habilidades' }
           </Link>
-          <Link to="/projects" className={`header-link projects ${proj}`}>
+          <Link to="/projects" className={`header-link projects ${currPage.projects}`}>
             { englishMode ? 'Projects' : 'Projetos' }
           </Link>
-          <Link to="/contact" className={`header-link contact ${cont}`}>
+          <Link to="/contact" className={`header-link contact ${currPage.contact}`}>
             { englishMode ? 'Contact me!' : 'Fale comigo!' }
           </Link>
         </nav>

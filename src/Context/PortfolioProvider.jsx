@@ -7,10 +7,9 @@ function PortProvider({ children }) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const [abt, setAbt] = useState("");
-  const [skl, setSkl] = useState("");
-  const [proj, setProj] = useState("");
-  const [cont, setCont] = useState("");
+  const [currPage, setCurrPage] = useState({
+    about: "", skills: "", projects: "", contact: ""
+  });
 
   const md = darkMode ? "dark" : "light";
 
@@ -25,14 +24,8 @@ function PortProvider({ children }) {
     setName,
     message,
     setMessage,
-    abt, 
-    setAbt,
-    skl,
-    setSkl,
-    proj,
-    setProj,
-    cont,
-    setCont,
+    currPage,
+    setCurrPage,
     md
   }
 

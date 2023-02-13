@@ -1,5 +1,6 @@
 import html from "../Images/Stacks/html-logo.png";
 import oldFolio from "../Images/Projects/old-portfolio.png";
+import currFolio from "../Images/Projects/current-portfolio.png"
 import css from "../Images/Stacks/css-logo.png";
 import sass from "../Images/Stacks/sass-logo.png";
 import javascript from "../Images/Stacks/javascript-logo.png";
@@ -21,9 +22,9 @@ const ProjectsInfo = [
     namePT: "Este Portfólio",
     nameEN: "This Portfolio",
     type: ["Front-End"],
-    image: html,
+    image: currFolio,
     descriptionPT: "Meu portfólio atual, feito após o final do curso de programação.",
-    descriptionEN: "My current portfolio, made after the end of the programming course. ",
+    descriptionEN: "My current portfolio, made after the end of the programming course.",
     stacks: [react, sass, html],
     link: "atual",
     gitRepository: "https://github.com/caio-cmc/react-portfolio"
