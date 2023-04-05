@@ -4,6 +4,7 @@ import Header from '../Components/Header';
 import eu from '../Images/eu.jpeg';
 import AboutInfos from '../Infos/AboutInfos';
 import AboutCard from '../Components/AboutCard';
+import { aboutPT, aboutEN } from '../Infos/LongTexts';
 import '../Styles/Pages/About.scss';
 
 function About() {
@@ -20,7 +21,9 @@ function About() {
           <div className="about-main-info">
             {/*REMOVER CLASSE MODE-ICON NA IMAGEM FINAL*/}
             <img src={ eu } alt="ex" className="about-front-image mode-icon"/>
-            <p className="txt">{ englishMode ? "Here yall will know a little bit more about me :)" : "Por aqui vocês vão saber um pouco mais sobre mim :)" }</p>
+            <p className="about-opening txt">
+              { englishMode ? aboutEN : aboutPT }
+            </p>
           </div>
         </div>
       </div>
@@ -28,8 +31,6 @@ function About() {
           <AboutCard
             key={ info.id }
             id={ info.id }
-            topicPT={ info.topicPT }
-            topicEN={ info.topicEN }
             imageDRK={ info.imageDRK }
             imageLGT={ info.imageLGT }
             paragraph1PT={ info.paragraph1PT }
