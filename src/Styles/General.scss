@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-$russian-violet: #10002bff;
-$russian-violet-2: #240046ff;
-$persian-indigo: #3c096cff;
-$purple: #5a189aff;
-$french-violet: #7b2cbfff;
-$amethyst: #9d4eddff;
-$heliotrope: #c77dffff;
-$mauve: #e0aaffff;
+$teste-azul: #4A4E69;
+$teste-bege: #F2E9E4;
 
 * {
   margin: 0px;
@@ -38,8 +32,9 @@ $mauve: #e0aaffff;
   .header-bg, .odd, .project-card-main {
     background-color: #545454;
   }
+  .header-bg
   .project-card-main {
-    border: solid white 1px;
+    // border: solid white 1px;
 
     &:hover {
       box-shadow: 5px 5px 5px grey;
@@ -66,7 +61,6 @@ $mauve: #e0aaffff;
   }
   .ttl,
   .about-ttl,
-  .about-card-ttl,
   .projects-ttl,
   .skills-ttl,
   .contact-ttl {
@@ -82,7 +76,11 @@ $mauve: #e0aaffff;
       color: red;
     }
   }
-  .txt, .contact-txt, .projects-txt, .homepage-txt {
+  .txt,
+  .contact-txt,
+  .projects-txt,
+  .homepage-txt,
+  .about-card-txt {
     color: antiquewhite;
   }
   .selected {
@@ -132,8 +130,9 @@ $mauve: #e0aaffff;
   .header-bg, .odd, .project-card-main {
     background-color: #0466C8;
   }
+  .header-bg
   .project-card-main {
-    border: solid black 1px;
+    // border: solid black 1px;
 
     &:hover {
       box-shadow: 5px 5px 5px grey;
@@ -160,7 +159,6 @@ $mauve: #e0aaffff;
   }
   .ttl,
   .about-ttl,
-  .about-card-ttl,
   .projects-ttl,
   .skills-ttl,
   .contact-ttl {
@@ -176,7 +174,11 @@ $mauve: #e0aaffff;
       color: red;
     }
   }
-  .txt, .contact-txt, .projects-txt, .homepage-txt {
+  .txt,
+  .contact-txt,
+  .projects-txt,
+  .homepage-txt,
+  .about-card-txt {
     color: black;
   }
   .selected {
