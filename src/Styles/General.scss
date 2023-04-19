@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-$teste-azul: #4A4E69;
-$teste-bege: #F2E9E4;
+$bright-white: #eeeeee;
+$white: #F7F8F2;
+$gray-white: #D4D3CE;
+$light-grey: #D8DCE7;
+$grey: #808080;
+$dark-grey: #45484D;
+$black: #060607;
+$blue: #25476A;
+$purple: #775079;
 
 * {
   margin: 0px;
@@ -12,196 +19,110 @@ $teste-bege: #F2E9E4;
 
 .dark-mode {
   .mode-icon, .chevron {
-    filter: invert(100%) sepia(50%) saturate(0%) hue-rotate(251deg) brightness(108%) contrast(101%);
+    filter: invert(100%) sepia(60%) saturate(4%) hue-rotate(336deg) brightness(108%) contrast(87%);
   }
-  .toggler {
-    background-color: #303030;
-  }
-  .form-sub-button {
-    background-color: #545454;
-    color: #fff;
-
-    &:hover {
-      background-color: #2e2e2e;
-    }
-    
-    &:disabled {
-      background-color: grey;
-    }
-  }
-  .header-bg, .odd, .project-card-main {
-    background-color: #545454;
-  }
-  .header-bg
-  .project-card-main {
-    // border: solid white 1px;
-
-    &:hover {
-      box-shadow: 5px 5px 5px grey;
-    }
-  }
-  .card-main {
-    &:hover {
-      box-shadow: 5px 5px 5px grey;
-    }
-  }
-  .project-card-image {
-    border: solid black 1px;
-  }
-  .bg,
-  .contact-bg,
-  .skills-bg,
-  .even,
-  .projects-bg {
-    background-color: rgb(0, 0, 0);
+  .header-bg, .odd {
+    background-color: $blue;
     transition: 300ms;
   }
-  .card-bg {
-    background-color: darkgrey;
+  .page-bg, .even {
+    background-color: $dark-grey;
+    transition: 300ms;
   }
-  .ttl,
-  .about-ttl,
-  .projects-ttl,
-  .skills-ttl,
-  .contact-ttl {
-    color: whitesmoke;
+  .title {
+    color: $bright-white;
   }
-  .project-card-ttl {
-    color: whitesmoke;
-  }
-  .header-link {
-    color: #fff;
-
-    &:hover {
-      color: red;
-    }
-  }
-  .txt,
-  .contact-txt,
-  .projects-txt,
-  .homepage-txt,
-  .about-card-txt {
-    color: antiquewhite;
-  }
-  .selected {
-    color: black;
-  }
-  .social-anchor {
-    &:hover {
-      background-color: red;
-    }
-  }
-  .type {
-    background-color: antiquewhite;
-    color: black;
-  }
-  .project-card-description {
-    color: aliceblue;
+  .text {
+    color: $white;
   }
   .link {
-    background-color: antiquewhite;
-    color: black;
-
+    color: $blue;
+  }
+  .card-bg {
+    background-color: $grey;
+    border: solid 1px $white;
+  }
+  .button-bg {
+    background-color: $gray-white;
+  }
+  .header-link {
+    color: $bright-white;
+    
     &:hover {
-      background-color: rgb(253, 219, 174);
+      color: $black;
+    }
+  }
+  .selected {
+    color: $black;
+  }
+  .toggler {
+    background-color: $black;
+  }
+  .homepage-intro-name {
+    color: $purple;
+    text-shadow: 5px 5px 5px $black;
+  }
+  .form-sub-button {
+    background-color: $gray-white;
+    color: $blue;
+
+    &:disabled {
+      background-color: $grey;
     }
   }
 }
 
 .light-mode {
   .mode-icon, .chevron {
-    filter: invert(0%) sepia(0%) saturate(7%) hue-rotate(149deg) brightness(101%) contrast(100%);
+    filter: invert(23%) sepia(11%) saturate(2870%) hue-rotate(170deg) brightness(97%) contrast(87%);
   }
-  .toggler {
-    background-color: antiquewhite;
-  }
-  .form-sub-button {
-    background-color: #0466C8;
-    color: #fff;
-
-    &:hover {
-      background-color: #02376d;
-    }
-    
-    &:disabled {
-      background-color: grey;
-    }
-  }
-  .header-bg, .odd, .project-card-main {
-    background-color: #0466C8;
-  }
-  .header-bg
-  .project-card-main {
-    // border: solid black 1px;
-
-    &:hover {
-      box-shadow: 5px 5px 5px grey;
-    }
-  }
-  .card-main {
-    &:hover {
-      box-shadow: 5px 5px 5px grey;
-    }
-  }
-  .project-card-image {
-    border: solid black 1px;
-  }
-  .bg,
-  .contact-bg,
-  .skills-bg,
-  .even,
-  .projects-bg {
-    background-color: antiquewhite;
+  .header-bg, .odd {
+    background-color: $gray-white;
     transition: 300ms;
   }
-  .card-bg {
-    background-color: darkgrey;
+  .page-bg, .even {
+    background-color: $light-grey;
+    transition: 300ms;
   }
-  .ttl,
-  .about-ttl,
-  .projects-ttl,
-  .skills-ttl,
-  .contact-ttl {
-    color: rgb(26, 25, 25);
+  .title {
+    color: $blue;
   }
-  .project-card-ttl {
-    color: whitesmoke;
-  }
-  .header-link {
-    color: #fff;
-
-    &:hover {
-      color: red;
-    }
-  }
-  .txt,
-  .contact-txt,
-  .projects-txt,
-  .homepage-txt,
-  .about-card-txt {
-    color: black;
-  }
-  .selected {
-    color: rgb(6, 255, 6);
-  }
-  .social-anchor {
-    &:hover {
-      background-color: red;
-    }
-  }
-  .type {
-    background-color: antiquewhite;
-    color: black;
-  }
-  .project-card-description {
-    color: aliceblue;
+  .text {
+    color: $dark-grey;
   }
   .link {
-    background-color: antiquewhite;
-    color: black;
-
+    color: $bright-white;
+  }
+  .card-bg {
+    background-color: $gray-white;
+    border: solid 1px $dark-grey;
+  }
+  .button-bg {
+    background-color: $blue;
+  }
+  .header-link {
+    color: $blue;
+    
     &:hover {
-      background-color: rgb(253, 219, 174);
+      color: $purple;
+    }
+  }
+  .selected {
+    color: $purple;
+  }
+  .toggler {
+    background-color: $bright-white;
+  }
+  .homepage-intro-name {
+    color: $blue;
+    text-shadow: 5px 5px 5px $grey;
+  }
+  .form-sub-button {
+    background-color: $blue;
+    color: $bright-white;
+
+    &:disabled {
+      background-color: $grey;
     }
   }
 }

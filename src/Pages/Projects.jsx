@@ -45,9 +45,9 @@ function Projects() {
   return (
     <div className="projects-view">
       <Header page="projects" />
-      <div className="projects-main projects-bg">
-        <h1 className="projects-ttl">{ englishMode ? "Projects" : "Projetos" }</h1>
-        <p className="projects-txt">
+      <div className="projects-main projects-bg page-bg">
+        <h1 className="projects-ttl title">{ englishMode ? "Projects" : "Projetos" }</h1>
+        <p className="projects-txt text">
           { englishMode ? projEN : projPT }
         </p>
         <div className="projects-outer-carousel">

@@ -14,7 +14,7 @@ function AboutCard(props) {
     englishMode
   } = props;
 
-  const left = id % 2 ? true : false;
+  const left = id % 2 ? false : true;
   const evenOrOdd = id % 2 ? "odd" : "even";
 
   return (
@@ -24,8 +24,8 @@ function AboutCard(props) {
           <div className="about-card-content">
             <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className="about-card-image" />
             <div className="about-card-paragraphs">
-              <p className="about-card-txt">{ englishMode ? paragraph1EN : paragraph1PT }</p>
-              <p className="about-card-txt">{ englishMode ? paragraph2EN : paragraph2PT }</p>
+              <p className="about-card-txt text">{ englishMode ? paragraph1EN : paragraph1PT }</p>
+              <p className="about-card-txt text">{ englishMode ? paragraph2EN : paragraph2PT }</p>
             </div>
           </div>
         </div>
@@ -33,8 +33,8 @@ function AboutCard(props) {
         <div className={`about-card ${evenOrOdd}`}>
           <div className="about-card-content">
             <div className="about-card-paragraphs">
-              <p className="about-card-txt">{ englishMode ? paragraph1EN : paragraph1PT }</p>
-              <p className="about-card-txt">{ englishMode ? paragraph2EN : paragraph2PT }</p>
+              <p className="about-card-txt text">{ englishMode ? paragraph1EN : paragraph1PT }</p>
+              <p className="about-card-txt text">{ englishMode ? paragraph2EN : paragraph2PT }</p>
             </div>
             <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className="about-card-image" />
           </div>

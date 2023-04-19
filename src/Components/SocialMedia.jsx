@@ -16,7 +16,7 @@ function SocialMedia(props) {
         src={ image }
         alt={ `${ name } logo` }
       />
-      <p className="txt">{ `${ userLink }` }</p>
+      <p className="text">{ `${ userLink }` }</p>
     </a>
   );
 }

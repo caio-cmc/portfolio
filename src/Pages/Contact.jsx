@@ -13,12 +13,12 @@ function Contact() {
   return (
     <div className="contact-page-main">
       <Header page="contact" />
-      <div className="contact-bg">
+      <div className="contact-bg page-bg">
         <div className="contact-text-container">
-          <h1 className="contact-ttl">
+          <h1 className="contact-ttl title">
             { englishMode ? "Contact me" : "Fale comigo" }
           </h1>
-          <p className="contact-txt">
+          <p className="contact-txt text">
             { englishMode ? contEN1 : contPT1 }
             <br />
             { englishMode ? contEN2 : contPT2 }

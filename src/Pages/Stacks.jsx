@@ -11,13 +11,13 @@ function Stacks() {
   return (
     <div className="skills-view">
       <Header page="skills" />
-      <div className="stacks-main skills-bg">
-        <h1 className="skills-ttl">
+      <div className="stacks-main skills-bg page-bg">
+        <h1 className="skills-ttl title">
           { englishMode ? "Skills" : "Habilidades" }
         </h1>
         <div className="stack-card-wrap">
           <div className="skill-type-container">
-              <h2 className="skills-ttl">Front-end</h2>
+              <h2 className="skills-ttl title">Front-end</h2>
               <div className="skills-list">
                 {StackInfos.map((stack) => {
                   return stack.type === "front" &&
@@ -30,7 +30,7 @@ function Stacks() {
               </div>
           </div>
           <div className="skill-type-container">
-            <h2 className="skills-ttl">Back-end</h2>
+            <h2 className="skills-ttl title">Back-end</h2>
             <div className="skills-list">
                 {StackInfos.map((stack) => {
                   return stack.type === "back" &&
@@ -43,7 +43,7 @@ function Stacks() {
               </div>
           </div>
           <div className="skill-type-container">
-            <h2 className="skills-ttl">General</h2>
+            <h2 className="skills-ttl title">General</h2>
             <div className="skills-list">
                 {StackInfos.map((stack) => {
                   return stack.type === "general" &&

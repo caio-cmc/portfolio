@@ -10,11 +10,11 @@ function ProjectCard(props) {
   const { englishMode } = useContext(PortContext);
   
   return (
-    <div className="project-card-main">
-      <h2 className="project-card-ttl">
+    <div className="project-card-main card-bg">
+      <h2 className="project-card-ttl title">
         { englishMode ? nameEN : namePT }
       </h2>
-      <div className="project-card-type">
+      <div className="project-card-type text">
         { type.map((t) => (
           <p key={ t } className={`${t} type`}>
             { t }
@@ -32,20 +32,20 @@ function ProjectCard(props) {
           </div>
         </div>
       </div>
-      <p className="project-card-description">
+      <p className="project-card-description text">
         { englishMode ? descriptionEN : descriptionPT }
       </p>
       <div className="project-card-links">
         {
           link === "atual" ? 
-          <span className="fake link">
+          <span className="fake link button-bg">
             { englishMode ? "You're here, silly :P" : "Tá aqui, bobinho :P" }
           </span> :
           <a
             href={ link }
             target="_blank"
             rel="noreferrer"
-            className="project link"
+            className="project link button-bg"
           >
             { englishMode ? "Project link" : "Link do Projeto" }
           </a>
@@ -54,7 +54,7 @@ function ProjectCard(props) {
           href={ gitRepository }
           target="_blank"
           rel="noreferrer"
-          className="repository link"
+          className="repository link button-bg"
         >
           { englishMode ? "GitHub repository" : "Repositório GitHub" }
         </a>
