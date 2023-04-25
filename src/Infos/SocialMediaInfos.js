@@ -5,24 +5,28 @@ import linked from "../Images/linkedin-logo.png";
 
 const SocialMediaInfos = [
   {
+    id: 1,
     name: "GitHub",
     userLink: "/caio-cmc",
     image: gh,
     url: "https://github.com/caio-cmc"
   },
   {
+    id: 2,
     name: "LinkedIn",
     userLink: "/caiocsrmc",
     image: linked,
     url: "https://www.linkedin.com/in/caiocsrmc/"
   },
   {
+    id: 3,
     name: "Instagram",
     userLink: "/caio_cmc",
     image: insta,
     url: "https://www.instagram.com/caio_cmc/"
   },
   {
+    id: 4,
     name: "Facebook",
     userLink: "/caio.csr",
     image: face,

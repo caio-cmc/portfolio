@@ -22,10 +22,10 @@ function AboutCard(props) {
       { left ? (
         <div className={`about-card ${evenOrOdd}`}>
           <div className="about-card-content">
-            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className="about-card-image" />
+            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className="about-card-image fade-left" />
             <div className="about-card-paragraphs">
-              <p className="about-card-txt text">{ englishMode ? paragraph1EN : paragraph1PT }</p>
-              <p className="about-card-txt text">{ englishMode ? paragraph2EN : paragraph2PT }</p>
+              <p className="about-card-txt text fade-right">{ englishMode ? paragraph1EN : paragraph1PT }</p>
+              <p className="about-card-txt text fade-right-300">{ englishMode ? paragraph2EN : paragraph2PT }</p>
             </div>
           </div>
         </div>
@@ -33,10 +33,10 @@ function AboutCard(props) {
         <div className={`about-card ${evenOrOdd}`}>
           <div className="about-card-content">
             <div className="about-card-paragraphs">
-              <p className="about-card-txt text">{ englishMode ? paragraph1EN : paragraph1PT }</p>
-              <p className="about-card-txt text">{ englishMode ? paragraph2EN : paragraph2PT }</p>
+              <p className="about-card-txt text fade-left">{ englishMode ? paragraph1EN : paragraph1PT }</p>
+              <p className="about-card-txt text fade-left-300">{ englishMode ? paragraph2EN : paragraph2PT }</p>
             </div>
-            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className="about-card-image" />
+            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className="about-card-image fade-right" />
           </div>
         </div>
       ) }

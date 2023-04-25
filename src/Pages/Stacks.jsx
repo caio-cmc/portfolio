@@ -12,13 +12,13 @@ function Stacks() {
     <div className="skills-view">
       <Header page="skills" />
       <div className="stacks-main skills-bg page-bg">
-        <h1 className="skills-ttl title">
+        <h1 className="skills-ttl title fade-in">
           { englishMode ? "Skills" : "Habilidades" }
         </h1>
         <div className="stack-card-wrap">
           <div className="skill-type-container">
-              <h2 className="skills-ttl title">Front-end</h2>
-              <div className="skills-list">
+              <h2 className="skills-ttl title fade-in">Front-end</h2>
+              <div className="skills-list fade-left">
                 {StackInfos.map((stack) => {
                   return stack.type === "front" &&
                   (<StackCard
@@ -30,8 +30,8 @@ function Stacks() {
               </div>
           </div>
           <div className="skill-type-container">
-            <h2 className="skills-ttl title">Back-end</h2>
-            <div className="skills-list">
+            <h2 className="skills-ttl title fade-in">Back-end</h2>
+            <div className="skills-list fade-right">
                 {StackInfos.map((stack) => {
                   return stack.type === "back" &&
                   (<StackCard
@@ -43,8 +43,8 @@ function Stacks() {
               </div>
           </div>
           <div className="skill-type-container">
-            <h2 className="skills-ttl title">General</h2>
-            <div className="skills-list">
+            <h2 className="skills-ttl title fade-in">General</h2>
+            <div className="skills-list fade-left">
                 {StackInfos.map((stack) => {
                   return stack.type === "general" &&
                   (<StackCard
