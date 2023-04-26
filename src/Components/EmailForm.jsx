@@ -51,7 +51,7 @@ function EmailForm() {
   }
 
   return (
-    <div>
+    <div className="fade-in-300">
       <form className="email-form" onSubmit={ sendEmail }>
         <input
           className="form-input email"

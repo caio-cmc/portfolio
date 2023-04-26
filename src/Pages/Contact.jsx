@@ -13,12 +13,12 @@ function Contact() {
   return (
     <div className="contact-page-main">
       <Header page="contact" />
-      <div className="contact-bg">
+      <div className="contact-bg page-bg">
         <div className="contact-text-container">
-          <h1 className="contact-ttl">
+          <h1 className="contact-ttl title fade-in">
             { englishMode ? "Contact me" : "Fale comigo" }
           </h1>
-          <p className="contact-txt">
+          <p className="contact-txt text fade-in">
             { englishMode ? contEN1 : contPT1 }
             <br />
             { englishMode ? contEN2 : contPT2 }
@@ -31,6 +31,7 @@ function Contact() {
           { SocialMediaInfos.map((social) => (
             <SocialMedia
               key={ social.name }
+              id={ social.id }
               userLink={ social.userLink }
               name={ social.name }
               image={ social.image }

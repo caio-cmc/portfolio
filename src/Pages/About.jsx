@@ -12,16 +12,16 @@ function About() {
 
   return (
     <div>
-      <div className="about-view about-bg">
+      <div className="about-view about-bg page-bg">
         <Header
           page="about"
         />
         <div className="about-main even">
-          <h1 className="about-ttl">{ englishMode ? "About me" : "Sobre mim" }</h1>
+          <h1 className="about-ttl title fade-in">{ englishMode ? "About me" : "Sobre mim" }</h1>
           <div className="about-main-info">
             {/*REMOVER CLASSE MODE-ICON NA IMAGEM FINAL*/}
-            <img src={ eu } alt="ex" className="about-front-image mode-icon"/>
-            <p className="about-opening txt">
+            <img src={ eu } alt="ex" className="about-front-image mode-icon fade-left"/>
+            <p className="about-opening text fade-right">
               { englishMode ? aboutEN : aboutPT }
             </p>
           </div>

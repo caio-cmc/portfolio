@@ -1,7 +1,9 @@
 import React from 'react';
 import "../Styles/Components/AboutCard.scss"
+import { useInView } from "react-intersection-observer";
 
 function AboutCard(props) {
+  const { ref, inView } = useInView();
   const {
     id,
     imageDRK,
@@ -14,18 +16,26 @@ function AboutCard(props) {
     englishMode
   } = props;
 
-  const left = id % 2 ? true : false;
-  const evenOrOdd = id % 2 ? "odd" : "even";
+  const isEven = (idNum) => {
+    if (idNum % 2 === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  const right = isEven(id) ? true : false;
+  const evenOrOdd = isEven(id) ? "even" : "odd";
 
   return (
-    <div>
-      { left ? (
+    <div ref={ ref }>
+      { right ? (
         <div className={`about-card ${evenOrOdd}`}>
           <div className="about-card-content">
-            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className="about-card-image" />
+            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className={`about-card-image ${ inView ? "fade-left" : "hidden" }`} />
             <div className="about-card-paragraphs">
-              <p className="about-card-txt">{ englishMode ? paragraph1EN : paragraph1PT }</p>
-              <p className="about-card-txt">{ englishMode ? paragraph2EN : paragraph2PT }</p>
+              <p className={`about-card-txt text ${ inView ? "fade-right" : "hidden" }`}>{ englishMode ? paragraph1EN : paragraph1PT }</p>
+              <p className={`about-card-txt text ${ inView ? "fade-right-300" : "hidden" }`}>{ englishMode ? paragraph2EN : paragraph2PT }</p>
             </div>
           </div>
         </div>
@@ -33,10 +43,10 @@ function AboutCard(props) {
         <div className={`about-card ${evenOrOdd}`}>
           <div className="about-card-content">
             <div className="about-card-paragraphs">
-              <p className="about-card-txt">{ englishMode ? paragraph1EN : paragraph1PT }</p>
-              <p className="about-card-txt">{ englishMode ? paragraph2EN : paragraph2PT }</p>
+              <p className={`about-card-txt text ${ inView ? "fade-left" : "hidden" }`}>{ englishMode ? paragraph1EN : paragraph1PT }</p>
+              <p className={`about-card-txt text ${ inView ? "fade-left-300" : "hidden" }`}>{ englishMode ? paragraph2EN : paragraph2PT }</p>
             </div>
-            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className="about-card-image" />
+            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className={`about-card-image ${ inView ? "fade-right" : "hidden" }`} />
           </div>
         </div>
       ) }

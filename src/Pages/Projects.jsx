@@ -45,12 +45,12 @@ function Projects() {
   return (
     <div className="projects-view">
       <Header page="projects" />
-      <div className="projects-main projects-bg">
-        <h1 className="projects-ttl">{ englishMode ? "Projects" : "Projetos" }</h1>
-        <p className="projects-txt">
+      <div className="projects-main projects-bg page-bg">
+        <h1 className="projects-ttl title fade-in">{ englishMode ? "Projects" : "Projetos" }</h1>
+        <p className="projects-txt text fade-in">
           { englishMode ? projEN : projPT }
         </p>
-        <div className="projects-outer-carousel">
+        <div className="projects-outer-carousel fade-bot">
           <div className="projects-carousel">
             <button className="projects-carousel-button" onClick={ leftScroll }>
               <img className="chevron" src={ leftChevron } alt="left chevron" />
