@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PortContext from "./PortfolioContext";
 
 function PortProvider({ children }) {
-  const [darkMode, setDarkMode] = useState(true);
-  const [englishMode, setEnglishMode] = useState(false);
+  const currMode = JSON.parse(localStorage.getItem("darkmode"));
+  const currLang = JSON.parse(localStorage.getItem("english"));
+  const [darkMode, setDarkMode] = useState(currMode);
+  const [englishMode, setEnglishMode] = useState(currLang);
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -11,7 +13,10 @@ function PortProvider({ children }) {
     about: "", skills: "", projects: "", contact: ""
   });
 
-  const md = darkMode ? "dark" : "light";
+  useEffect(() => {
+    localStorage.setItem("darkmode", JSON.stringify(darkMode));
+    localStorage.setItem("english", JSON.stringify(englishMode));
+  }, [darkMode, englishMode])
 
   const portValue = {
     darkMode,
@@ -25,8 +30,7 @@ function PortProvider({ children }) {
     message,
     setMessage,
     currPage,
-    setCurrPage,
-    md
+    setCurrPage
   }
 
   return (

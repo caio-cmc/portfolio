@@ -8,10 +8,10 @@ import Projects from '../Pages/Projects';
 import Contact from '../Pages/Contact';
 
 function PathRouter() {
-  const { md } = useContext(PortContext);
+  const { darkMode } = useContext(PortContext);
 
   return (
-    <div className={`${md}-mode`}>
+    <div className={`${darkMode ? "dark-mode" : "light-mode"}`}>
       <Switch>
         <Route path="/home" component={ Homepage } />
         <Route path="/about" component={ About } />
