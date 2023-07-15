@@ -2,13 +2,13 @@ const homePT1 = "Eaí pessoal, meu nome é";
 
 const homeEN1 = "Hey guys, my name is";
 
-const homePT2 = "Desenvolvedor júnior full-stack";
+const homePT2 = "Desenvolvedor full-stack";
 
-const homeEN2 = "Full-stack junior developer";
+const homeEN2 = "Full-stack developer";
 
 const aboutPT = "Nascido e criado em Santos, só descobri quanto valorizo a tranquilidade do litoral quando passei a viver entre ele e a região metropolitana de São Paulo. Formado em gastronomia em 2016, apesar de sempre ter gostado de cozinhar, não ter me encontrado profissionalmente e questões de saúde me encorajaram a trocar de área. Hoje sou desenvolvedor full stack.";
 
-const aboutEN = "I was born in Santos, a brazilian coastal city in the state of São Paulo, I'm a full stack developer graduated in 2022. Stay with me, I'll tell you a little more about me.";
+const aboutEN = "Born and raised in Santos, a brazilian coastal city in the state of São Paulo, I'm a full stack developer graduated in 2022. Stay with me, I'll tell you a little more about me.";
 
 const projPT = "Aqui estão alguns dos projetos já desenvolvidos durante a minha jornada como desenvolvedor.";
 

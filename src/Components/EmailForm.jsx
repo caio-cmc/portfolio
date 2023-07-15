@@ -24,10 +24,10 @@ function EmailForm() {
       message: message
     }
     await emailjs.send(
-      process.env.REACT_APP_SERVICE,
-      process.env.REACT_APP_TEMPLATE,
+      "service_ymp3l8r",
+      "template_5vbast9",
       templateParams,
-      process.env.REACT_APP_PUB_ID
+      "mHyviWDHI44ngM91J"
     );
     alert("Email enviado com sucesso!");
     setEmail("");
