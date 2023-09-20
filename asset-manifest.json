@@ -1,11 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.120ed36b.css",
-    "main.js": "/portfolio/static/js/main.7e027a8c.js",
-    "static/media/old-portfolio.png": "/portfolio/static/media/old-portfolio.581ee1558ae789d8dd97.png",
+    "main.css": "/portfolio/static/css/main.e4d5bcad.css",
+    "main.js": "/portfolio/static/js/main.b9538861.js",
+    "static/media/starwars.png": "/portfolio/static/media/starwars.deab42256e3d226ac23f.png",
+    "static/media/abouthobby.png": "/portfolio/static/media/abouthobby.40a01859d366ab7839aa.png",
+    "static/media/aboutme.png": "/portfolio/static/media/aboutme.a96e1b27e234f4f4dde5.png",
+    "static/media/aboutdev.png": "/portfolio/static/media/aboutdev.f991bbcb3bade3709061.png",
+    "static/media/calcuwhey.png": "/portfolio/static/media/calcuwhey.101454e4c08f6713e849.png",
     "static/media/insta-logo.png": "/portfolio/static/media/insta-logo.e291349581f33a4f4b3e.png",
-    "static/media/eu.jpeg": "/portfolio/static/media/eu.23f8d24971aa31e8f3e4.jpeg",
+    "static/media/darkme.png": "/portfolio/static/media/darkme.52247a961c87c33ab871.png",
+    "static/media/lightme.png": "/portfolio/static/media/lightme.e86bed9ef4f9615fab45.png",
     "static/media/current-portfolio.png": "/portfolio/static/media/current-portfolio.bd96787292ec7639aca2.png",
+    "static/media/cypress-logo.png": "/portfolio/static/media/cypress-logo.cdad75e679a1bc245a20.png",
     "static/media/react-logo.png": "/portfolio/static/media/react-logo.8a6fc0a24a800d1e0f4a.png",
     "static/media/github-logo.png": "/portfolio/static/media/github-logo.bc45ee99ee31457ba80a.png",
     "static/media/mysql-logo.png": "/portfolio/static/media/mysql-logo.9848c91d94a2f262cfbb.png",
@@ -22,11 +28,11 @@
     "static/media/right-chevron.svg": "/portfolio/static/media/right-chevron.195c07f2ec5629213cd2f9c86086ad24.svg",
     "static/media/left-chevron.svg": "/portfolio/static/media/left-chevron.be94ee03b13fa41a7659139b1d75075c.svg",
     "static/media/moon.svg": "/portfolio/static/media/moon.8c680bd12d23686c8b8781a131944529.svg",
-    "main.120ed36b.css.map": "/portfolio/static/css/main.120ed36b.css.map",
-    "main.7e027a8c.js.map": "/portfolio/static/js/main.7e027a8c.js.map"
+    "main.e4d5bcad.css.map": "/portfolio/static/css/main.e4d5bcad.css.map",
+    "main.b9538861.js.map": "/portfolio/static/js/main.b9538861.js.map"
   },
   "entrypoints": [
-    "static/css/main.120ed36b.css",
-    "static/js/main.7e027a8c.js"
+    "static/css/main.e4d5bcad.css",
+    "static/js/main.b9538861.js"
   ]
 }
