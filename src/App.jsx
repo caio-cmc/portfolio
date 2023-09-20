@@ -7,7 +7,7 @@ function App() {
   return (
     <main>
       <PortProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/portfolio">
           <PathRouter />
         </BrowserRouter>
       </PortProvider>  
