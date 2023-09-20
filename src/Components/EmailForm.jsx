@@ -24,7 +24,7 @@ function EmailForm() {
       message: message
     }
     await emailjs.send(
-      "service_ymp3l8r",
+      "service_0fa9e39",
       "template_5vbast9",
       templateParams,
       "mHyviWDHI44ngM91J"
@@ -52,7 +52,7 @@ function EmailForm() {
 
   return (
     <div className="fade-in-300">
-      <form className="email-form" onSubmit={ sendEmail }>
+      <form className="email-form">
         <input
           className="form-input email"
           type="email"
@@ -81,8 +81,9 @@ function EmailForm() {
         />
         <button
           className="form-input form-sub-button"
-          type="submit"
+          type="button"
           disabled={ !buttonSwitch }
+          onClick={ sendEmail }
         >
           { englishMode ? "Send" : "Enviar" }
         </button>
