@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import PortContext from '../Context/PortfolioContext';
 import { Link } from 'react-router-dom';
-import name from '../Images/Header/name.png';
 import sun from "../Images/Header/sun.svg";
 import moon from "../Images/Header/moon.svg";
 import bra from "../Images/Header/brazil-flag.png";
@@ -59,7 +58,8 @@ function Header(props) {
   return (
     <header className="header-component header-bg">
       <Link to="/home" className="header-link home">
-        <img src={ name } alt="my name" />
+        {/* <img className='header-logo' src={ darkMode ? drkLogo : lgtLogo } alt="my logo" /> */}
+        <h1 className='header-logo'>CMC</h1>
       </Link>
       <div className="header-nav-toggle">
         <nav className="header-all-nav">

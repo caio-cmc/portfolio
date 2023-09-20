@@ -7,6 +7,12 @@
   gap: 0.5rem;
   text-decoration: none;
   border-radius: 1rem;
+  transition: 500ms;
+
+  &:hover {
+    transition: 500ms;
+    scale: 1.1;
+  }
 }
 
 .social-logo {

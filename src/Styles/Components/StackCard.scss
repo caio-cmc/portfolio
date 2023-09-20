@@ -9,6 +9,12 @@
   height: 10rem;
   width: 9rem;
   gap: 1rem;
+  transition: 500ms;
+
+  &:hover {
+    scale: 1.1;
+    transition: 500ms;
+  }
 }
 
 .stack-name {

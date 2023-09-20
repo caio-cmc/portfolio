@@ -1,6 +1,8 @@
 .header-component {
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 0 10px 1px rgba($color: #000, $alpha: 0.35);
+  z-index: 1;
   align-items: center;
   height: 7rem;
   padding: 0vh 10vw ;
@@ -21,6 +23,11 @@
   text-decoration: none;
   font-size: large;
   font-weight: 700;
+}
+
+.header-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
 }
 
 .selected {

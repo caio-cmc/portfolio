@@ -10,6 +10,7 @@ import mysql from "../Images/Stacks/mysql-logo.png";
 import mongodb from "../Images/Stacks/mongo-logo.png";
 import git from "../Images/Stacks/git-logo.png";
 import github from "../Images/Stacks/github-logo.png";
+import cypress from "../Images/Stacks/cypress-logo.png";
 
 const StackInfos = [
   {
@@ -71,7 +72,12 @@ const StackInfos = [
     name: "GitHub",
     type: "general",
     image: github
-  }
+  },
+  {
+    name: "Cypress",
+    type: "front",
+    image: cypress
+  },
 ];
 
 export default StackInfos;

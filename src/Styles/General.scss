@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 $bright-white: #eeeeee;
 $white: #F7F8F2;
 $gray-white: #D4D3CE;
@@ -158,7 +159,7 @@ $purple: #775079;
   .toggler {
     background-color: $black;
   }
-  .homepage-intro-name {
+  .homepage-intro-name, .header-logo {
     color: $purple;
     text-shadow: 5px 5px 5px $black;
   }
@@ -213,7 +214,7 @@ $purple: #775079;
   .toggler {
     background-color: $bright-white;
   }
-  .homepage-intro-name {
+  .homepage-intro-name, .header-logo {
     color: $blue;
     text-shadow: 5px 5px 5px $grey;
   }
