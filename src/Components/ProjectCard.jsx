@@ -15,11 +15,9 @@ function ProjectCard(props) {
         { englishMode ? nameEN : namePT }
       </h2>
       <div className="project-card-type text">
-        { type.map((t) => (
-          <p key={ t } className={`${t} type`}>
-            { t }
+          <p className={`${type} type`}>
+            { type }
           </p>
-        )) }
       </div>
       <div className="project-card-container-image">
         <img className="project-card-image" src={ image } alt={ namePT } />
@@ -37,9 +35,9 @@ function ProjectCard(props) {
       </p>
       <div className="project-card-links">
         {
-          link === "atual" ? 
+          type === "Back-end" ? 
           <span className="fake link button-bg">
-            { englishMode ? "You're here, silly :P" : "Tá aqui, bobinho :P" }
+            { englishMode ? "Back-end only" : "Só back-end" }
           </span> :
           <a
             href={ link }

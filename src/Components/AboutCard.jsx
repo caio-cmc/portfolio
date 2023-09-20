@@ -6,13 +6,11 @@ function AboutCard(props) {
   const { ref, inView } = useInView();
   const {
     id,
-    imageDRK,
-    imageLGT,
+    image,
     paragraph1PT,
     paragraph2PT,
     paragraph1EN,
     paragraph2EN,
-    darkMode,
     englishMode
   } = props;
 
@@ -32,7 +30,7 @@ function AboutCard(props) {
       { right ? (
         <div className={`about-card ${evenOrOdd}`}>
           <div className="about-card-content">
-            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className={`about-card-image ${ inView ? "fade-left" : "hidden" }`} />
+            <img src={ image } alt="ex" className={`about-card-image ${ inView ? "fade-left" : "hidden" }`} />
             <div className="about-card-paragraphs">
               <p className={`about-card-txt text ${ inView ? "fade-right" : "hidden" }`}>{ englishMode ? paragraph1EN : paragraph1PT }</p>
               <p className={`about-card-txt text ${ inView ? "fade-right-300" : "hidden" }`}>{ englishMode ? paragraph2EN : paragraph2PT }</p>
@@ -46,7 +44,7 @@ function AboutCard(props) {
               <p className={`about-card-txt text ${ inView ? "fade-left" : "hidden" }`}>{ englishMode ? paragraph1EN : paragraph1PT }</p>
               <p className={`about-card-txt text ${ inView ? "fade-left-300" : "hidden" }`}>{ englishMode ? paragraph2EN : paragraph2PT }</p>
             </div>
-            <img src={ darkMode ? imageDRK : imageLGT } alt="ex" className={`about-card-image ${ inView ? "fade-right" : "hidden" }`} />
+            <img src={ image } alt="ex" className={`about-card-image ${ inView ? "fade-right" : "hidden" }`} />
           </div>
         </div>
       ) }
