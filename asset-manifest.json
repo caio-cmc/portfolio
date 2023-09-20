@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c1a11692.css",
-    "main.js": "/portfolio/static/js/main.40f37982.js",
+    "main.js": "/portfolio/static/js/main.f3c7e2b3.js",
     "static/media/starwars.png": "/portfolio/static/media/starwars.deab42256e3d226ac23f.png",
     "static/media/abouthobby.png": "/portfolio/static/media/abouthobby.40a01859d366ab7839aa.png",
     "static/media/aboutme.png": "/portfolio/static/media/aboutme.a96e1b27e234f4f4dde5.png",
@@ -29,10 +29,10 @@
     "static/media/left-chevron.svg": "/portfolio/static/media/left-chevron.be94ee03b13fa41a7659139b1d75075c.svg",
     "static/media/moon.svg": "/portfolio/static/media/moon.8c680bd12d23686c8b8781a131944529.svg",
     "main.c1a11692.css.map": "/portfolio/static/css/main.c1a11692.css.map",
-    "main.40f37982.js.map": "/portfolio/static/js/main.40f37982.js.map"
+    "main.f3c7e2b3.js.map": "/portfolio/static/js/main.f3c7e2b3.js.map"
   },
   "entrypoints": [
     "static/css/main.c1a11692.css",
-    "static/js/main.40f37982.js"
+    "static/js/main.f3c7e2b3.js"
   ]
 }
