@@ -4,6 +4,7 @@ import Header from "../Components/Header";
 import EmailForm from "../Components/EmailForm";
 import SocialMedia from "../Components/SocialMedia";
 import SocialMediaInfos from "../Infos/SocialMediaInfos";
+import Loading from "../Components/Loading";
 import { contPT1, contEN1, contPT2, contEN2, contPT3, contEN3 } from "../Infos/LongTexts";
 import "../Styles/Pages/Contact.scss";
 
@@ -40,6 +41,7 @@ function Contact() {
           )) }
         </div>
       </div>
+      <Loading />
     </div>
   );
 }

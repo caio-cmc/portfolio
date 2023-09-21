@@ -12,6 +12,7 @@ function EmailForm() {
     setName,
     message,
     setMessage,
+    setIsLoading
   } = useContext(PortContext);
 
   const buttonSwitch = email && name && message;
@@ -23,16 +24,22 @@ function EmailForm() {
       from_name: name,
       message: message
     }
+    setEmail("");
+    setName("");
+    setMessage("");
+    setIsLoading(true);
     await emailjs.send(
       "service_0fa9e39",
       "template_5vbast9",
       templateParams,
       "mHyviWDHI44ngM91J"
     );
-    alert("Email enviado com sucesso!");
-    setEmail("");
-    setName("");
-    setMessage("");
+    setIsLoading(false);
+    if (englishMode) {
+      alert("Email successfully sent!");
+    } else {
+      alert("Email enviado com sucesso!");
+    }
   }
 
   const handleEmail = (event) => {

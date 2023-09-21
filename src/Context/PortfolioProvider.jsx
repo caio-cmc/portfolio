@@ -9,6 +9,8 @@ function PortProvider({ children }) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [dots, setDots] = useState("");
   const [currPage, setCurrPage] = useState({
     about: "", skills: "", projects: "", contact: ""
   });
@@ -29,6 +31,10 @@ function PortProvider({ children }) {
     setName,
     message,
     setMessage,
+    isLoading,
+    setIsLoading,
+    dots,
+    setDots,
     currPage,
     setCurrPage
   }
