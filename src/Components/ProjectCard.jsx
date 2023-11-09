@@ -37,7 +37,7 @@ function ProjectCard(props) {
         {
           type === "Back-end" ? 
           <span className="fake link button-bg">
-            { englishMode ? "Back-end only" : "Só back-end" }
+            { englishMode ? "Back-end only :(" : "Só back-end :(" }
           </span> :
           <a
             href={ link }

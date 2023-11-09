@@ -43,8 +43,21 @@ function Stacks() {
               </div>
           </div>
           <div className="skill-type-container">
-            <h2 className="skills-ttl title fade-in">General</h2>
+            <h2 className="skills-ttl title fade-in">{ englishMode ? "Tests" : "Testes" }</h2>
             <div className="skills-list fade-left">
+                {StackInfos.map((stack) => {
+                  return stack.type === "test" &&
+                  (<StackCard
+                    key={ stack.name }
+                    name={ stack.name }
+                    image={ stack.image }
+                  />
+                )})}
+              </div>
+          </div>
+          <div className="skill-type-container">
+            <h2 className="skills-ttl title fade-in">{ englishMode ? "Generals" : "Gerais" }</h2>
+            <div className="skills-list fade-right">
                 {StackInfos.map((stack) => {
                   return stack.type === "general" &&
                   (<StackCard

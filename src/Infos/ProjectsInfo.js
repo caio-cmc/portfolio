@@ -2,9 +2,13 @@ import html from "../Images/Stacks/html-logo.png";
 import currFolio from "../Images/Projects/current-portfolio.png";
 import calcuwhey from "../Images/Projects/calcuwhey.png";
 import starwars from "../Images/Projects/starwars.png";
+import myradio from "../Images/Projects/myradio.png";
 import sass from "../Images/Stacks/sass-logo.png";
 import react from "../Images/Stacks/react-logo.png";
 import cypress from "../Images/Stacks/cypress-logo.png";
+import nodejs from "../Images/Stacks/nodejs-logo.png";
+import mysql from "../Images/Stacks/mysql-logo.png";
+import docker from "../Images/Stacks/docker-logo.png";
 
 const ProjectsInfo = [
   {
@@ -28,6 +32,17 @@ const ProjectsInfo = [
     stacks: [react, sass, cypress],
     link: "https://caio-cmc.github.io/calcuwhey/",
     gitRepository: "https://github.com/caio-cmc/calcuwhey"
+  },
+  {
+    namePT: "MyRadio API",
+    nameEN: "MyRadio API",
+    type: "Back-end",
+    image: myradio,
+    descriptionPT: "API simples que mostra informações de músicas e preferencias de usuários.",
+    descriptionEN: "Simple API that shows music informations and user preferences.",
+    stacks: [nodejs, mysql, docker],
+    link: "https://github.com/caio-cmc/radio-back",
+    gitRepository: "https://github.com/caio-cmc/radio-back"
   },
   {
     namePT: "Buscador de planetas SW",

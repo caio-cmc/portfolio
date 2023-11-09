@@ -11,6 +11,10 @@ import mongodb from "../Images/Stacks/mongo-logo.png";
 import git from "../Images/Stacks/git-logo.png";
 import github from "../Images/Stacks/github-logo.png";
 import cypress from "../Images/Stacks/cypress-logo.png";
+import docker from "../Images/Stacks/docker-logo.png";
+import jest from "../Images/Stacks/jest-logo.png";
+import mocha from "../Images/Stacks/mocha-logo.png";
+import chai from "../Images/Stacks/chai-logo.png";
 
 const StackInfos = [
   {
@@ -74,9 +78,29 @@ const StackInfos = [
     image: github
   },
   {
+    name: "Jest",
+    type: "test",
+    image: jest
+  },
+  {
     name: "Cypress",
-    type: "front",
+    type: "test",
     image: cypress
+  },
+  {
+    name: "Docker",
+    type: "back",
+    image: docker
+  },
+  {
+    name: "Mocha",
+    type: "test",
+    image: mocha
+  },
+  {
+    name: "Chai",
+    type: "test",
+    image: chai
   },
 ];
 
